@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full bg-gradient-to-b from-[#DC8068] via-[#C2463C] to-[#8D0E0E] text-white pt-6 px-[5%] overflow-hidden min-h-[600px] shadow-lg">
       <div className="flex flex-wrap justify-between md:justify-center md:gap-16 relative z-10 pb-[120px] max-w-7xl mx-auto">
-        <div className="flex-1 min-w-[280px] mr-8 mb-8 p-6 rounded-lg">
+        <div className="flex-1 min-w-[280px] mr-8 sm:mb-8 p-6 rounded-lg">
           <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] mb-6 font-bold text-white">
             Unleash Your Questions
             <br />
