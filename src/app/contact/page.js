@@ -2,8 +2,122 @@ import React from 'react'
 
 function page() {
   return (
-    <div>
-      <h1>Contact Us</h1>
+    <div className=" min-h-screen bg-gradient-to-b from-[#312D2D] to-red-900 text-white">
+      {/* Header */}
+      <div className=" pt-10 flex justify-center item-centre p-8 w-full">
+        <img 
+              src="\contact-font.png"
+              alt="Contact-Us"
+              className="w-180 "
+        />
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16">
+        {/* Left Side - Image and Contact Info */}
+        <div className="space-y-8">
+          {/* Team Image */}
+          <div className="relative ">
+            <img 
+              src="\Rectangle 8.png"
+              alt="Team collaboration"
+              className="w-full shadow-2xl"
+            />
+          </div>
+
+          {/* Contact Information */}
+        <div className=" p-8 rounded-lg text-white font-sans text-left">
+              <h2 className="text-4xl font-extrabold mb-2">Contact</h2>
+              <p className="text-lg tracking-wider mb-6">codingninjas@gmail.com</p>
+              <div className="mb-8">
+                <p className="text-sm text-gray-200">Found Us At</p>
+                <p className="text-base font-semibold">KIIT UNIVERSITY</p>
+                <p className="text-base font-semibold">ODISHA</p>
+              </div>
+              <div className="flex space-x-8">
+                
+                <a href="https://www.instagram.com/cnkiit?igsh=OGxuOXJuOTcwZTNn" className="py-3 hover:text-pink-400">
+                  <img 
+                  src="\insta-logo.png" 
+                  alt="Description of image"
+                />
+                </a>
+                
+                <a href="#" className=" py-5 hover:text-blue-400">
+                  <img 
+                  src="\X.png" 
+                  alt="Description of image"
+                />
+                </a>
+                
+                <a href="#" className="py-4 hover:text-blue-500">
+                  <img 
+                  src="\linkedin.png" 
+                  alt="Description of image"
+                />
+                </a>
+              </div>
+            </div>
+        </div>
+
+        {/* Right Side - Contact Form */}
+        <div className=" text-left  p-8 border-t-4 border-l-4 border-red-500/50">
+          <h3 className="text-2xl font-semibold mb-8 text-white">Send Your Message.</h3>
+          
+          <div className="space-y-6">
+            {/* Name Field */}
+            <div>
+              <label htmlFor="name" className="block text-lg text-gray-300 mb-3">
+                Your name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                
+                className="w-full  px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300"
+                required
+              />
+            </div>
+
+            {/* Email Field */}
+            <div>
+              <label htmlFor="email" className="block text-lg text-gray-300 mb-3">
+                Your Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                
+                className="w-full px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300"
+                required
+              />
+            </div>
+
+            {/* Message Field */}
+            <div>
+              <label htmlFor="message" className="block text-lg text-gray-300 mb-3">
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                
+                className="w-full h-50 px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300 resize-none"
+                required
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <button
+                type="button"
+
+                className="w-full bg-red-500/80 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+              >Send Message</button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
