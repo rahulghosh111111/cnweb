@@ -1,5 +1,6 @@
 import AboutSection from "@/components/Landing/AboutSection";
 import HeroSection from "@/components/Landing/Herosection";
+import OurNinjas from "@/components/Landing/OurNinjas";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutSection/>
+      <OurNinjas/>
     </div>
   );
 }
