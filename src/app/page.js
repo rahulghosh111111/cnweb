@@ -1,7 +1,7 @@
 import AboutSection from "@/components/Landing/AboutSection";
 import HeroSection from "@/components/Landing/Herosection";
 import OurNinjas from "@/components/Landing/OurNinjas";
-
+import Image from "next/image";
 export default function Home() {
   return (
 
