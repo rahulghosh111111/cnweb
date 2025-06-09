@@ -1,10 +1,10 @@
-import { useRouter } from "next/router";
-import EventComponent from "../..EventComponent";
-import { events } from "../data/eventsData";
+'use client';
+import { useParams } from "next/navigation";
+import EventComponent from "../../../components/Events/EventComponent";
+import { events } from "../../../data/eventsData";
 
 const EventPage = () => {
-  const router = useRouter();
-  const { eventName } = router.query;
+  const { eventName } = useParams();
 
   const eventIndex = events.findIndex((e) => e.slug === eventName);
   const event = events[eventIndex];
