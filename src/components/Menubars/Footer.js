@@ -34,8 +34,8 @@ const Footer = () => {
 
   return (
     <footer className="relative w-full bg-gradient-to-b from-[#DC8068] via-[#C2463C] to-[#8D0E0E] text-white pt-6 px-[5%] overflow-hidden min-h-[600px] shadow-lg">
-      <div className="flex flex-wrap justify-between md:justify-center md:gap-16 relative z-10 pb-[120px] max-w-7xl mx-auto">
-        <div className="flex-1 min-w-[280px] mr-8 sm:mb-8 p-6 rounded-lg">
+      <div className="flex flex-wrap justify-between md:justify-center lg:gap-16 relative z-10 pb-[120px] max-w-7xl mx-auto">
+        <div className="flex-1 min-w-[280px] mr-8 lg:mb-8 p-6 rounded-lg">
           <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] mb-6 font-bold text-white">
             Unleash Your Questions
             <br />
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div className="flex sm:gap-12 gap-6 flex-wrap p-6 rounded-lg">
-          <div className="min-w-[180px] mb-6">
+          <div className="min-w-[180px] sm:mb-6">
             <h3 className="text-xl mb-4 font-bold">QUICK LINKS</h3>
             <ul className="list-none p-0 m-0">
               {quickLinks.map((link, index) => (
@@ -73,7 +73,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="min-w-[180px] mb-6">
+          <div className="min-w-[180px] sm:mb-6">
             <h3 className="text-xl mb-4 font-bold">CONTACT US</h3>
             <ul className="list-none p-0 m-0">
               {contactInfo.map((item, index) => (
