@@ -42,8 +42,6 @@ function page() {
           </div>
         </div>
       </div>
-
-
       {/* our mission part*/}
       <section className="bg-[#2F2B2B] text-white py-0 px-6">
         <h2 className="text-[100px] md:text-[100px] font-bold text-[#FF8820] solid text-center mb-12">
