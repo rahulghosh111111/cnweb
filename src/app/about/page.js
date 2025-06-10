@@ -131,7 +131,7 @@ function page() {
                 <img
                   src="/AboutNinjas.png"
                   alt="FAQ Ninjas"
-                  className="h-full w-full max-w-sm "
+                  className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  "
                 />
               </div>
             
