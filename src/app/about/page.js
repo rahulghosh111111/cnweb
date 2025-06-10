@@ -4,10 +4,10 @@ function page() {
   return (
     <div>
 
-      {/* Header */}
+      {/* About us part*/}
       <div className='flex  justify-center items-center h-screen bg-[#2F2B2B] pt-10'>
         <div className="md:w-1/2 text-left">
-          <h1 className="text-[100px] flex justify-center items-center font-Inria Sans font-bold text-[#FF8820] shadow-inner shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)]  mb-2 mr-20">About us</h1>
+          <h1 className="text-[100px] flex justify-center items-center font Sans font-bold text-[#FF8820] shadow-inner shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)]  mb-2 mr-20">About us</h1>
 
 
           <div className="text-[#FF8820] text-[20px] flex justify-start items-start flex-col  ml-15  mr-20 ">
