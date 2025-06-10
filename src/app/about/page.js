@@ -94,7 +94,7 @@ function page() {
         {/* our domains part*/}
 
         <section className="py-16 px-4">
-          <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
+          <h2 className="text-[100px] flex justify-center items-center font Sans font-bold text-[#FF8820]  mb-12">
             Our Domains
           </h2>
 
@@ -125,16 +125,16 @@ function page() {
         <section className=" py-12 px-6">
           <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
             {/* Left: Image + Title */}
-            <div>
+            
               <div className="md:w-1/2 flex flex-col items-center ">
-                <h2 className="text-8xl font-bold text-[#E58282] mb-20 ">FAQ</h2>
+                
                 <img
                   src="/AboutNinjas.png"
                   alt="FAQ Ninjas"
-                  className=" flex w-full max-w-sm absolute  left-1/4 transform -translate-x-1/2"
+                  className="h-full w-full max-w-sm "
                 />
               </div>
-            </div>
+            
 
             {/* Right: FAQ List */}
             <div className="md:w-1/2  text-[#E58282]">
