@@ -72,6 +72,9 @@ function page() {
         </div>
       </section>
 
+
+      <h1>Not finished</h1>
+
     </div>
   )
 }
