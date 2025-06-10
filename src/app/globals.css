@@ -1,3 +1,5 @@
+@import 'https://fonts.cdnfonts.com/css/gang-of-three';
+@import 'https://fonts.googleapis.com/css2?family=Paytone+One&display=swap';
 @import "tailwindcss";
 
 :root {
@@ -24,3 +26,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* {OurEvents -->start} */
+
+
+.font-gangofthree {
+  font-family: 'Gang of Three', sans-serif;
+}
+ .paytone-one-regular {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* {OurEvents -->end} */
