@@ -123,16 +123,13 @@ function page() {
         <section className=" py-12 px-6">
           <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
             {/* Left: Image + Title */}
-            
-              <div className="md:w-1/2 flex flex-col items-center ">
-                
-                <img
-                  src="/AboutNinjas.png"
-                  alt="FAQ Ninjas"
-                  className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  "
-                />
-              </div>
-            
+
+            <div className="md:w-1/2 flex flex-col items-center ">
+
+              <img className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  " src="/AboutNinjas.png" alt="FAQ Ninjas"
+              />
+            </div>
+
 
             {/* Right: FAQ List */}
             <div className="md:w-1/2  text-[#E58282]">
