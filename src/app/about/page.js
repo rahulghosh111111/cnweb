@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 function page() {
   const domains = [
@@ -126,8 +127,15 @@ function page() {
 
             <div className="md:w-1/2 flex flex-col items-center ">
 
-              <image className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  " src="/AboutNinjas.png" alt="FAQ Ninjas"
-              />
+              <div className="flex items-center justify-center p-6 bg-gray-900">
+      <Image
+        src="/AboutNinjas.png"         // Path from the public folder
+        alt="Ninja Image"         // Good for SEO
+        width={500}              // Required for optimization
+        height={300}             // Required for optimization
+        className="absolute  h-auto w-auto max-w-sm  right-1/2 transform -translate-x-1/4" // Tailwind classes
+      />
+    </div>
             </div>
 
 
