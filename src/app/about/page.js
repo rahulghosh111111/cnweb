@@ -126,7 +126,7 @@ function page() {
 
             <div className="md:w-1/2 flex flex-col items-center ">
 
-              <img className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  " src="/AboutNinjas.png" alt="FAQ Ninjas"
+              <image className="absolute  h-auto w-auto max-w-sm   right-1/2 transform -translate-x-1/4  " src="/AboutNinjas.png" alt="FAQ Ninjas"
               />
             </div>
 
