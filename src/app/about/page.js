@@ -51,7 +51,7 @@ function page() {
       </section>
 
       {/* Why Join Us and Our Domains */}
-      <div className='bg-gradient-to-b from-[#242121] to-[#C06B20] border-t border-white pt-10 pb-20 px-4'>
+      <div className='bg-gradient-to-b from-[#242121] to-[#C06B20] border-t border-r border-white pt-10 pb-20 px-4'>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {[1, 2, 3, 4].map((item) => (
             <div key={item} className="relative bg-[#EBD9C9] text-black border-2 border-[#FF8820] rounded-xl p-6 h-[300px] flex flex-col">
