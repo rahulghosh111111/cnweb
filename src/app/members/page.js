@@ -8,13 +8,15 @@ export default function Members() {
   const [currentDomain , setCurrentDomain] = useState(0);
   const scrollContainerRef = useRef(null);
   return (
-    <div className="min-h-screen bg-[linear-gradient(180deg,#9B5E4E_0%,#550909_100%)]">
+    <div className="bg-[linear-gradient(180deg,#9B5E4E_0%,#550909_100%)]">
       <HeroSection />
-      <DomainScroll 
+      <div className="pt-6 pb-12 md:pt-12 md:pb-20">
+        <DomainScroll 
       currentDomain={currentDomain}
       setCurrentDomain={setCurrentDomain}
       scrollContainerRef={scrollContainerRef}
       />
+      </div>
     </div>
   );
 }

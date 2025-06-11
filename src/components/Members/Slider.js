@@ -59,21 +59,22 @@ export default function Slider({ members, showAll }) {
       <div
         ref={carouselRef}
         onScroll={handleScroll}
-        className="flex gap-6 overflow-x-auto scrollbar-hide px-12 py-8"
+        className="flex gap-6 overflow-x-auto px-6 pt-4 pb-2 md:px-12 md:pt-6 md:pb-4
+    [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         style={{ scrollSnapType: 'x mandatory' }}
       >
         {members.map((member) => (
           <div
             key={member.id}
-            className="flex-shrink-0 group cursor-pointer"
+            className="flex-shrink-0 w-52 border border-[#3B2A22]  bg-[#7B4A3A] rounded-lg shadow-md p-3 flex flex-col items-center"
             style={{ scrollSnapAlign: 'start' }}
           >
-            <div className="w-32 h-32 rounded-xl overflow-hidden border-2 border-white/20 group-hover:border-[#D9C921] transition-all duration-300 shadow-lg">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-xl overflow-hidden border-2 border-white/20 group-hover:border-[#D9C921] transition-all duration-300 shadow-lg">
               <Image
                 src={member.image}
                 alt={member.name}
-                width={128}
-                height={128}
+                width={160}
+                height={160}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
             </div>
