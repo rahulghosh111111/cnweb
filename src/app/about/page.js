@@ -89,7 +89,6 @@ function page() {
                   height={300}
                   className=" mt-4 w-auto max-w-xs sm:max-w-sm md:max-w-md h-auto md:mt-60 md:mr-10 md:absolute md:right-1/2 md:transform md:-translate-x-1/4"
                 />
-
               </div>
             </div>
 
