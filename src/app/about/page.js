@@ -79,22 +79,19 @@ function page() {
         <section className="py-12">
           <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
             <div className="md:w-1/2 flex flex-col items-center">
-  {/* Mobile-first layout: Image above heading */}
-  <div className="flex flex-col md:flex-col-reverse items-center justify-center p-6">
-    {/* Image First on Mobile, Second on Desktop */}
-    <Image
-  src="/AboutNinjas.png"
-  alt="Ninja Image"
-  width={500}
-  height={300}
-  className="
-    mt-4 w-auto max-w-xs sm:max-w-sm md:max-w-md h-auto 
-    md:mt-60 md:mr-10 md:absolute md:right-1/2 md:transform md:-translate-x-1/4
-  "
-/>
+              {/* Mobile-first layout: Image above heading */}
+              <div className="flex flex-col md:flex-col-reverse items-center justify-center p-6">
+                {/* Image First on Mobile, Second on Desktop */}
+                <Image
+                  src="/AboutNinjas.png"
+                  alt="Ninja Image"
+                  width={500}
+                  height={300}
+                  className=" mt-4 w-auto max-w-xs sm:max-w-sm md:max-w-md h-auto md:mt-60 md:mr-10 md:absolute md:right-1/2 md:transform md:-translate-x-1/4"
+                />
 
-  </div>
-</div>
+              </div>
+            </div>
 
             <div className="md:w-1/2 text-[#E58282] w-full">
               <h3 className="text-xl sm:text-2xl font-semibold mb-6  text-center item-center justify-center">Frequently Asked Question</h3>
