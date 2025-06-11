@@ -4,12 +4,8 @@ function page() {
   return (
     <div className=" min-h-screen bg-gradient-to-b from-[#312D2D] to-red-900 text-white">
       {/* Header */}
-      <div className=" pt-10 flex justify-center item-centre p-8 w-full">
-        <img 
-              src="\contact-font.png"
-              alt="Contact-Us"
-              className="w-180 "
-        />
+      <div className=" pt-12 flex justify-center item-centre p-8 w-full">
+        <h1 className='text-4xl sm:text-[80px] md:text-[100px] text-center justify-center md:text-left font-bold text-red-500/50  mb-4'>CONTACT US</h1>
       </div>
 
       {/* Main Content */}
