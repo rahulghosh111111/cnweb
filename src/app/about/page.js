@@ -77,44 +77,50 @@ function page() {
 
         {/* FAQ Section */}
         <section className="py-12">
-          <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
-            <div className="md:w-1/2 flex flex-col items-center">
-              {/* Mobile-first layout: Image above heading */}
-              <div className="flex flex-col md:flex-col-reverse items-center justify-center p-6">
+  <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-8 lg:p-12 flex flex-col md:flex-col lg:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
+    
+    {/* Image Section — hidden on mobile & tablet, visible only on desktop */}
+    <div className="w-full lg:w-1/2 flex flex-col items-center">
+      <div className="flex items-center justify-center p-6">
+        <Image
+          src="/AboutNinjas.png"
+          alt="Ninja Image"
+          width={500}
+          height={300}
+          className="hidden lg:block absolute mt-60 mr-10 right-1/2 transform -translate-x-1/4 w-auto max-w-xs sm:max-w-sm md:max-w-md h-auto"
+        />
+      </div>
+    </div>
 
-                {/* Image First on Mobile, Second on Desktop */}
-                <Image
-                  src="/AboutNinjas.png"
-                  alt="Ninja Image"
-                  width={500}
-                  height={300}
-                  className="hidden md:block absolute mt-60 mr-10 right-1/2 transform -translate-x-1/4 w-auto max-w-xs sm:max-w-sm md:max-w-md h-auto"
-                />
+    {/* FAQ Form Section */}
+    <div className="w-full lg:w-1/2 text-[#E58282]">
+      <h3 className="text-2xl font-semibold mb-6 text-center flex justify-center items-center">
+  Frequently Asked Question
+</h3>
 
-              </div>
-            </div>
 
-            <div className="md:w-1/2 text-[#E58282] w-full">
-              <h3 className="text-2xl  sm:text-2xl font-semibold mb-6  text-center item-center justify-center">Frequently Asked Question</h3>
-              <form className="space-y-4">
-                {[1, 2, 3].map((q) => (
-                  <input
-                    key={q}
-                    type="text"
-                    placeholder={`Enter your question ${q}`}
-                    className="bg-[#262222] rounded-xl h-12 w-full px-4 text-white font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-shadow duration-300 ease-in-out"
-                  />
-                ))}
-                <button
-                  type="submit"
-                  className="flex justify-center bg-orange-500 text-white font-semibold px-6 py-2 rounded-xl hover:bg-orange-600 transition mx-auto"
-                >
-                  Submit Questions
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
+      <form className="space-y-4 px-4 md:px-6 lg:px-0">
+        {[1, 2, 3].map((q) => (
+          <input
+            key={q}
+            type="text"
+            placeholder={`Enter your question ${q}`}
+            className="bg-[#262222] rounded-xl h-12 w-full px-4 text-white font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-shadow duration-300 ease-in-out"
+          />
+        ))}
+
+        <button
+  type="submit"
+  className="flex justify-center items-center bg-orange-500 text-white font-semibold px-6 py-2 rounded-xl hover:bg-orange-600 transition mx-auto"
+>
+  Submit Questions
+</button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
       </div>
     </div>
   );
