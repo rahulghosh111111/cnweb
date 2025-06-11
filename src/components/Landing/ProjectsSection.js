@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import Button from './Button';
 
 export default function ProjectsSection() {
   return (
@@ -10,7 +11,7 @@ export default function ProjectsSection() {
       }}
     >
       <h2
-        className="text-6xl mt-12 mb-10 text-center"
+        className="text-4xl md:text-6xl mt-8 md:mt-12 mb-6 md:mb-10 text-center"
         style={{
           fontFamily: "'Gang of Three', Arial, sans-serif",
           color: '#ffe08a',
@@ -21,17 +22,22 @@ export default function ProjectsSection() {
         OUR PROJECTS
       </h2>
       <div
-        className="flex flex-row gap-12 items-center justify-center flex-1"
+        className="
+          flex flex-col md:flex-row
+          gap-6 md:gap-12
+          items-center justify-center flex-1
+          w-full px-4 mb-5
+        "
         style={{
           flexGrow: 1,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
         }}
       >
         <ProjectCard name="Project 1" href="https://github.com/youruser/project1" />
         <ProjectCard name="Project 2" href="https://github.com/youruser/project2" />
         <ProjectCard name="Project 3" href="https://github.com/youruser/project3" />
+      </div>
+      <div className="mb-4 flex items-center justify-center">
+        <Button linkto="/projects" name="EXPLORE PROJECTS" />
       </div>
     </section>
   );

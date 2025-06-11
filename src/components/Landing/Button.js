@@ -1,14 +1,13 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 
-const redirectButton = () => {
-    window.location.href = '/events';
-};
-
-export default function Button({ children }) {
+export default function Button({ linkto,name }) {
   return (
-    <button  onClick= {redirectButton} className="bg-[#b84f2e] hover:bg-[#e06a3c] text-white px-6 py-2 rounded-lg font-bold text-lg shadow transition-all duration-200">
-      {children}
-    </button>
+    <Link href={linkto} passHref>
+            <button className="bg-[#b84f2e] hover:bg-[#e06a3c] text-white px-2 mx-37 md:px-2 py-2 rounded-xl  items-center justify-center flex text-base md:text-lg  shadow transition-all duration-200">
+              {name}
+            </button>
+          </Link>
   );
 }
