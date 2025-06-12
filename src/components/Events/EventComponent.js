@@ -16,7 +16,7 @@ const EventComponent = ({
 
   return (
     <div
-      className="fixed top-0 left-0 w-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-6 py-12"
       style={{ backgroundImage: `url(${bgImage})`,
                height: '100dvh' 
        }}
