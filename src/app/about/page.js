@@ -103,9 +103,6 @@ function Page() {
     <div>
       {/* About us part*/}
       <div className='flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#2F2B2B] pt-10 px-4'>
-
-
-
         <div className="w-full md:w-1/2 text-left">
           <h1 className="text-4xl sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] mb-6 md:text-center text-center">
             About us
@@ -116,13 +113,9 @@ function Page() {
             </p>
           </div>
         </div>
-
-
-
-
-        <div className="w-full md:w-auto mt-8 md:mt-0 flex justify-center gap-5">
-          <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl"></div>
-          <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl items-end"></div>
+        <div className="w-full md:w-auto mt-8 md:mt-0 flex justify-center gap-5 ">
+          <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl  "></div>
+          <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl items-end  "></div>
         </div>
       </div>
 
@@ -131,7 +124,7 @@ function Page() {
         <h2 className="text-[60px] sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] text-center mb-12">Our Mission</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="relative bg-[#555350] border-2 border-[#FF8820] rounded-xl p-6 h-[350px] flex flex-col">
+            <div key={item} className="relative bg-[#555350] border-2 border-[#FF8820] hover:transform hover:scale-102 transition-all  rounded-xl p-6 h-[350px] flex flex-col">
               <h3 className="text-2xl font-bold mt-6 text-center text-white">Heading</h3>
               <p className="text-sm mt-6 text-gray-200 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -149,7 +142,7 @@ function Page() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-[#2a1604] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300"
+                className="bg-[#2a1604] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300 hover:transform hover:scale-102"
               >
                 <div className="text-3xl mb-4">{feature.icon}</div>
                 <h3 className="text-white text-xl font-semibold mb-2">{feature.title}</h3>
@@ -200,7 +193,7 @@ function Page() {
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="rounded-2xl border border-[#FF8820] bg-transparent text-white"
+                    className="rounded-2xl border border-[#FF8820] hover:border-white bg-transparent text-white hover:transform hover:scale-102 transition-all duration-300"
                   >
                     <button
                       className="w-full flex justify-between items-center px-5 py-4 text-left text-lg md:text-xl font-semibold focus:outline-none"
