@@ -1,53 +1,74 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from './Button';
+// import Button from './Button'; // Remove Button import since we won't use it
+import { ArrowRight } from 'lucide-react';
 
 export default function EventsSection() {
   return (
     <section
-      className="w-full min-h-[500px] relative flex flex-col items-center"
+      className="w-full min-h-[600px] relative flex flex-col items-center overflow-hidden"
       style={{
-        background: "url('/ourEvents.jpg') center/cover ",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
       }}
     >
+      {/* Background image with better loading */}
+      <Image
+        src="/ourEvents.jpg"
+        alt="Events Background"
+        fill
+        priority
+        className="object-cover z-0"
+        quality={90}
+      />
+
+      {/* Enhanced gradient overlay with CSS animation */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/80 via-emerald-500/70 to-teal-700/80 z-0 " />
+
       <h2
-        className="text-4xl md:text-6xl mb-6 mt-10 md:mt-20 z-10 text-center"
-        style={{
-          fontFamily: "'Gang of Three', Arial, sans-serif",
-          color: '#ffe08a',
-          textShadow: '2px 2px 0 #000, 4px 4px 8px #000a',
-          letterSpacing: '0.04em',
-        }}
+        className="text-4xl md:text-6xl lg:text-7xl mb-8 mt-12 md:mt-20 z-10 text-center font-['Gang_of_Three',Arial,sans-serif] text-[#ffe08a] tracking-wider animate-fadeIn"
+
       >
         OUR EVENTS
       </h2>
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/70 via-emerald-500/60 to-teal-700/70 z-0" />
-
-      <div className="relative mb-10 md:mb-20 z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-4xl px-4 md:px-8 gap-6 md:gap-8">
-        <div className="flex-shrink-0 w-60 h-60 md:w-80 md:h-80 bg-black/50 rounded-xl flex items-center justify-center shadow-lg mb-6 md:mb-0">
+      <div
+        className="relative mb-10 md:mb-20 z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-5xl px-4 md:px-8 gap-8 lg:gap-12 animate-scaleIn"
+      >
+        {/* Enhanced image card with hover effects */}
+        <div className="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 group rounded-xl overflow-hidden shadow-2xl transition-all duration-300 hover:scale-105 transform perspective-1000">
+          {/* <div className="w-full h-full bg-gradient-to-b from-black/30 to-black/70 absolute inset-0 z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div> */}
           <Image
             src="/ourEvents.jpg"
             alt="Event"
-            width={320}
-            height={320}
-            className="rounded-lg object-cover"
-            style={{ background: '#222' }}
+            width={400}
+            height={400}
+            className="rounded-lg object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+            priority
           />
         </div>
 
-        <div className="flex flex-col items-start justify-center flex-1 text-center md:text-left">
+        <div className="flex flex-col items-start justify-center flex-1 text-center md:text-left bg-black/30 p-6 rounded-xl backdrop-blur-sm border border-white/10 shadow-xl">
           <p
-            className="text-white text-base md:text-lg mb-4 md:mb-6"
-            style={{ fontFamily: "'Paytone One', Arial, sans-serif" }}
+            className="text-white text-base md:text-xl mb-6 md:mb-8 leading-relaxed"
           >
-            Unleash your creativity. Connect, attend, and spark growth!
+            Unleash your creativity. Connect, attend, and spark growth through our
+            carefully curated events designed to inspire and transform.
           </p>
-          <div className='flex justify-center items-center m-auto'>
-          <Button linkto="/events" name="MORE EVENTS" />
-
+          <div
+            className="flex justify-center md:justify-start w-full"
+          >
+            <div className="transform transition-all duration-300 hover:scale-105 cursor-pointer hover:shadow-glow">
+              <Link 
+                href="/events"
+                className="bg-[#ffe08a] text-[#37742a] font-bold py-1.5 px-6 rounded-lg border-2 border-[#ffe08a]/30 shadow-lg flex items-center no-underline"
+              >
+                Explore Events <ArrowRight className="inline ml-2 h-5 w-5" strokeWidth={2.5} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
