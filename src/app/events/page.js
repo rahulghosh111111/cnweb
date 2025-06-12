@@ -14,7 +14,7 @@ export default function EventsPage() {
         {/* Custom grid for heading + 1st and 2nd card */}
         <div className="grid grid-cols-[2fr_1fr] gap-4 mb-8 items-stretch">
           <div>
-            <div className="text-white text-7xl font-bold text-center py-10">
+            <div className="text-white text-6xl font-bold text-center py-10">
               <p>HALL</p>
               <p>OF</p>
               <p>FAME</p>
