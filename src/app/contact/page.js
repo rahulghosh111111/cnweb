@@ -4,16 +4,16 @@ function page() {
   return (
     <div className=" min-h-screen bg-gradient-to-b from-[#312D2D] to-red-900 text-white">
       {/* Header */}
-      <div className=" pt-12 flex justify-center item-centre p-8 w-full">
+      <div className="pb-0 pt-14 flex justify-center item-centre p-8 w-full">
         <h1 className='text-4xl sm:text-[80px] md:text-[100px] text-center justify-center md:text-left font-bold text-red-500/50  mb-4'>CONTACT US</h1>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 pb-16">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-12 pb-16">
         {/* Left Side - Image and Contact Info */}
-        <div className="space-y-8">
+        <div className="space-y-0">
           {/* Team Image */}
-          <div className="relative ">
+          <div className="relative hidden lg:block ">
             <img 
               src="\Rectangle 8.png"
               alt="Team collaboration"
@@ -22,7 +22,7 @@ function page() {
           </div>
 
           {/* Contact Information */}
-        <div className=" p-8 rounded-lg text-white font-sans text-left">
+        <div className="hidden lg:block p-8 rounded-lg text-white font-sans text-left">
               <h2 className="text-4xl font-extrabold mb-2">Contact</h2>
               <p className="text-lg tracking-wider mb-6">codingninjas@gmail.com</p>
               <div className="mb-8">
