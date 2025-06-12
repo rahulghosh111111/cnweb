@@ -1,10 +1,34 @@
-import React from 'react'
+"use client";
+import React, {useState} from 'react'
 
 function page() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = () => {
+    console.log('Form submitted:', formData);
+    // Add form submission logic here
+    // alert('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  };
+
+
   return (
     <div className=" min-h-screen bg-gradient-to-b from-[#312D2D] to-red-900 text-white">
       {/* Header */}
-      <div className="pb-0 pt-14 flex justify-center item-centre p-8 w-full">
+      <div className="pb-0 pt-18 flex justify-center item-centre p-8 w-full">
         <h1 className='text-4xl sm:text-[80px] md:text-[100px] text-center justify-center md:text-left font-bold text-red-500/50  mb-4'>CONTACT US</h1>
       </div>
 
@@ -13,11 +37,11 @@ function page() {
         {/* Left Side - Image and Contact Info */}
         <div className="space-y-0">
           {/* Team Image */}
-          <div className="relative hidden lg:block ">
+          <div className="relative hidden lg:block  ml-8">
             <img 
               src="\Rectangle 8.png"
               alt="Team collaboration"
-              className="w-full shadow-2xl"
+              className="w-full h-168 shadow-2xl"
             />
           </div>
 
@@ -46,7 +70,7 @@ function page() {
                 />
                 </a>
                 
-                <a href="#" className="py-4 hover:text-blue-500">
+                <a href="https://www.linkedin.com/company/coding-ninjas-kiit/" className="py-4 hover:text-blue-500">
                   <img 
                   src="\linkedin.png" 
                   alt="Description of image"
@@ -70,7 +94,8 @@ function page() {
                 type="text"
                 id="name"
                 name="name"
-                
+                value={formData.name}
+                onChange={handleInputChange}
                 className="w-full  px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300"
                 required
               />
@@ -85,7 +110,8 @@ function page() {
                 type="email"
                 id="email"
                 name="email"
-                
+                value={formData.email}
+                onChange={handleInputChange}
                 className="w-full px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300"
                 required
               />
@@ -99,7 +125,8 @@ function page() {
               <textarea
                 id="message"
                 name="message"
-                
+                value={formData.message}
+                onChange={handleInputChange}
                 className="w-full h-50 px-4 py-4 bg-[#FFFAC2]/40 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-red-500/30 focus:border-transparent transition-all duration-300 resize-none"
                 required
               ></textarea>
@@ -108,7 +135,7 @@ function page() {
             {/* Submit Button */}
             <button
                 type="button"
-
+                onClick={handleSubmit}
                 className="w-full bg-red-500/80 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-800"
               >Send Message</button>
           </div>
