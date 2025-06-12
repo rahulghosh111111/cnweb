@@ -2,7 +2,29 @@
 
 import React, { useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight , Instagram , Linkedin, Twitter } from 'lucide-react';
+
+function SocialIcons({ socials }) {
+  return (
+    <div className="flex gap-5 justify-center mt-2">
+      {socials?.instagram && (
+        <a href={socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <Instagram className="text-[#D9C921] w-5 h-5 hover:scale-110 transition" />
+        </a>
+      )}
+      {socials?.linkedin && (
+        <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <Linkedin className="text-[#D9C921] w-5 h-5 hover:scale-110 transition" />
+        </a>
+      )}
+      {socials?.twitter && (
+        <a href={socials.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <Twitter className="text-[#D9C921] w-5 h-5 hover:scale-110 transition" />
+        </a>
+      )}
+    </div>
+  );
+}
 
 export default function Slider({ members, showAll }) {
   const carouselRef = useRef(null);
@@ -80,7 +102,7 @@ export default function Slider({ members, showAll }) {
             </div>
             <div className="text-center mt-3">
               <h4 className="text-white font-medium text-sm">{member.name}</h4>
-              <p className="text-white/70 text-xs">{member.position}</p>
+              <SocialIcons socials={member.socials}/>
             </div>
           </div>
         ))}
