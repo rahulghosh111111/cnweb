@@ -7,6 +7,33 @@ import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Code2, Briefcase, User, Zap, Gift, Trophy } from "lucide-react";
 
+import {BadgeCheck,Handshake,UserCheck,} from "lucide-react"; 
+
+
+
+{/* Mission cards data */ }
+const missionCards = [
+  {
+    title: "Quality",
+    description:
+      "We will always provide you the highest quality building at a price you can afford and we will always use all American steel.",
+    icon: <BadgeCheck className="h-10 w-10 text-[#FF8820]" />,
+  },
+  {
+    title: "Integrity",
+    description:
+      "We will provide honest upfront pricing. We will not cut corners or try to oversell a building just to make a sale.",
+    icon: <Handshake className="h-10 w-10 text-[#FF8820]" />,
+  },
+  {
+    title: "Experience",
+    description:
+      "We will provide qualified and trained design consultants, ensuring every building you buy is built to your exact needs.",
+    icon: <UserCheck className="h-10 w-10 text-[#FF8820]" />,
+  },
+];
+
+
 
 {/* FAQ data */ }
 const faqs = [
@@ -121,19 +148,45 @@ function Page() {
 
       {/* Our Mission Part */}
       <section className="bg-[#2F2B2B] text-white py-10 px-4">
-        <h2 className="text-[60px] sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] text-center mb-12">Our Mission</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="relative bg-[#555350] border-2 border-[#FF8820] hover:transform hover:scale-102 transition-all  rounded-xl p-6 h-[350px] flex flex-col">
-              <h3 className="text-2xl font-bold mt-6 text-center text-white">Heading</h3>
-              <p className="text-sm mt-6 text-gray-200 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-              </p>
-            </div>
-          ))}
+  <h2 className="text-4xl sm:text-[60px] md:text-[80px] font-bold text-[#FF8820] text-center mb-12">
+    Our Mission
+  </h2>
+
+
+
+
+  
+ 
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    {missionCards.map((card, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-2xl shadow-md text-center p-8 border border-gray-100 hover:shadow-lg transition-all duration-300"
+      >
+        <div className="flex items-center justify-center mb-4">
+          {card.icon}
         </div>
-        <h2 className="text-[60px] sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] text-center mt-20">Why Join us</h2>
-      </section>
+        <h3 className="text-lg font-semibold mb-2 text-gray-800">
+          {card.title}
+        </h3>
+        <p className="text-sm text-gray-600">{card.description}</p>
+      </div>
+    ))}
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h2 className="text-4xl sm:text-[60px] md:text-[80px] font-bold text-[#FF8820] text-center mt-20">
+    Why Join us
+  </h2>
+</section>
 
       {/* Why Join Us and Our Domains */}
       <div className='bg-gradient-to-b from-[#242121] to-[#FF8820] border-t border-r border-white pt-10 pb-20 px-4'>
@@ -168,8 +221,8 @@ function Page() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12">
-          <div className="bg-[#4a2d1f] rounded-3xl p-6 md:p-8 lg:p-12 flex flex-col md:flex-col lg:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
+        <section className="py-6 md:py-12">
+          <div className="bg-[#4a2d1f] rounded-3xl px-4 py-6 md:px-8 md:py-8 lg:px-12 lg:py-12 flex flex-col lg:flex-row items-center justify-between gap-6 max-w-7xl mx-auto shadow-lg">
 
             {/* Image Section — hidden on mobile & tablet, visible only on desktop */}
             <div className="w-full lg:w-1/2 flex flex-col items-center">
@@ -185,8 +238,8 @@ function Page() {
             </div>
 
             {/* FAQ Form Section */}
-            <div className="max-w-2xl translate-y-0 md:translate-y-0 w-full mx-auto px-4 py-10 bg-transparent min-h-screen">
-              <h2 className="text-3xl md:text-4xl font-bold text-center text-[#E58282] mb-10">
+            <div className="w-full max-w-2xl mx-auto px-2 sm:px-4 py-6 md:py-10">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#E58282] mb-8">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-4">
@@ -196,7 +249,7 @@ function Page() {
                     className="rounded-2xl border border-[#FF8820] hover:border-white bg-transparent text-white hover:transform hover:scale-102 transition-all duration-300"
                   >
                     <button
-                      className="w-full flex justify-between items-center px-5 py-4 text-left text-lg md:text-xl font-semibold focus:outline-none"
+                      className="w-full flex justify-between items-center px-5 py-4 text-left text-base sm:text-lg md:text-xl font-semibold focus:outline-none"
                       onClick={() => toggleIndex(index)}
                     >
                       <span className="text-[#fff]">{faq.question}</span>
