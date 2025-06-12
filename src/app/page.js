@@ -15,7 +15,7 @@ export default function Home() {
       <AboutSection/>
       <OurNinjas/>
       <OurEvents/>
-      <ProjectsSection/>
+      {/* <ProjectsSection/> */}
       <Alumini/>
       <JoinTeam/>
     </div>
