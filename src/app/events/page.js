@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "../data/eventsData";
+import { events } from "@/components/data/eventsData";
 
 export default function EventsPage() {
   return (
