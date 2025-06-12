@@ -26,7 +26,7 @@ const Herosection = () => {
             style={{
               textShadow:
                 "2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000",
-              fontFamily: "system-ui, sans-serif",
+              fontFamily: "'Gang of Three', Arial, sans-serif",
             }}
           >
             CODING
@@ -36,7 +36,7 @@ const Herosection = () => {
             style={{
               textShadow:
                 "2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000",
-              fontFamily: "system-ui, sans-serif",
+              fontFamily: "'Gang of Three', Arial, sans-serif",
             }}
           >
             NINJAS
