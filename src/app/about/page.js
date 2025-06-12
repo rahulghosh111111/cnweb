@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { Code2, Briefcase, User, Zap, Gift, Trophy } from "lucide-react";
 
 
 {/* FAQ data */ }
@@ -52,35 +53,42 @@ const domains = [
 const features = [
   {
     title: "Real-World Challenges, Real Skills",
-    icon: "↔️", // Replace with proper SVG if needed
-    description: "Why just study when you can build and solve? CodeSprint throws real-world problems your way—perfect to level up your logic and problem-solving.",
+    icon: <Code2 className="text-white w-6 h-6" />,
+    description:
+      "Why just study when you can build anCodingNinjas throws real-world problems your way—perfect to level up your logic and problem-solving.",
   },
   {
     title: "Placement Ready",
-    icon: "📘",
-    description: "CodeSprint gives you the edge in coding rounds and interviews—walk into placements with confidence.",
+    icon: <Briefcase className="text-white w-6 h-6" />,
+    description:
+      "CodingNinjas gives you the edge in coding rounds and interviews—walk into placements with confidence.",
   },
   {
     title: "Spotlight on You",
-    icon: "👤",
-    description: "Win or not, your skills get noticed. Top scorers shine on leaderboards and in the eyes of recruiters by your everyday LinkedIn posts.",
+    icon: <User className="text-white w-6 h-6" />,
+    description:
+      "Win or not, your skills get noticed. Top scorers shine on leaderboards and in the eyes of recruiters by your everyday LinkedIn posts.",
   },
   {
     title: "Learn by Doing",
-    icon: "⚡",
-    description: "Every round, every bug, every 'aha!' moment teaches you something new. This isn't just coding—it's growth in fast-forward.",
+    icon: <Zap className="text-white w-6 h-6" />,
+    description:
+      "Every round, every bug, every 'aha!' moment teaches you something new. This isn't just coding—it's growth in fast-forward.",
   },
   {
     title: "Prizes & Perks",
-    icon: "🎁",
-    description: "Think swag, certificates, chances of entering the USC.KIIT community and meet other bright minds!",
+    icon: <Gift className="text-white w-6 h-6" />,
+    description:
+      "Think swag, certificates, chances of entering the USC.KIIT community and meet other bright minds!",
   },
   {
     title: "Resume Booster",
-    icon: "🏆",
-    description: "Show you don’t just learn—you apply. CodeSprint on your resume says: 'I compete. I code. I conquer.'",
+    icon: <Trophy className="text-white w-6 h-6" />,
+    description:
+      "Show you don’t just learn—you apply. CodingNinjas on your resume says: 'I compete. I code. I conquer.'",
   },
 ];
+
 
 
 
@@ -95,13 +103,23 @@ function Page() {
     <div>
       {/* About us part*/}
       <div className='flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#2F2B2B] pt-10 px-4'>
-        <div className="w-full md:w-1/2 text-left">
-          <h1 className="text-4xl sm:text-[80px] md:text-[100px] text-center justify-center md:text-left font-bold text-[#FF8820] mb-6">About us</h1>
-          <div className="text-[#FF8820]  text-[16px] sm:text-[18px] md:text-[20px]  space-y-1 md:ml-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
 
+
+
+        <div className="w-full md:w-1/2 text-left">
+          <h1 className="text-4xl sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] mb-6 md:text-center text-center">
+            About us
+          </h1>
+          <div className="text-[#FF8820] text-[16px] sm:text-[18px] md:text-[20px] md:ml-8 space-y-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+            </p>
           </div>
         </div>
+
+
+
+
         <div className="w-full md:w-auto mt-8 md:mt-0 flex justify-center gap-5">
           <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl"></div>
           <div className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-120 bg-[#D9D9D9] rounded-xl items-end"></div>
@@ -125,13 +143,13 @@ function Page() {
       </section>
 
       {/* Why Join Us and Our Domains */}
-      <div className='bg-gradient-to-b from-[#242121] to-[#C06B20] border-t border-r border-white pt-10 pb-20 px-4'>
+      <div className='bg-gradient-to-b from-[#242121] to-[#FF8820] border-t border-r border-white pt-10 pb-20 px-4'>
         <div className="bg-transparent py-12 px-4 sm:px-6 lg:px-16">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-[#FF8820] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300"
+                className="bg-[#2a1604] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300"
               >
                 <div className="text-3xl mb-4">{feature.icon}</div>
                 <h3 className="text-white text-xl font-semibold mb-2">{feature.title}</h3>
