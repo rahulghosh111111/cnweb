@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import EventComponent from "../../../components/Events/EventComponent";
-import { events } from "../../data/eventsData";
+import { events } from "../../../components/data/eventsData";
 
 const EventPage = () => {
   const { eventName } = useParams();
