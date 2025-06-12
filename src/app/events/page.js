@@ -10,7 +10,7 @@ export default function EventsPage() {
         background: "linear-gradient(to top, #72231a 0%, #4e3a35 100%)",
       }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto mt-9">
         {/* Custom grid for heading + 1st and 2nd card */}
         <div className="grid grid-cols-[2fr_1fr] gap-4 mb-8 items-stretch">
           <div>
