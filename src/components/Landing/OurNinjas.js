@@ -16,7 +16,10 @@ const OurNinjas = () => {
       <div className="absolute inset-0 bg-[rgba(60,30,10,0.7)] z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <h2 className="text-center mb-16 text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider">
+        <h2
+          className="text-center mb-16 text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider"
+          style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
+        >
           <span className="text-white">OUR </span>
           <span className="text-[#d12c2c]">
             NINJ
@@ -44,7 +47,10 @@ const OurNinjas = () => {
               </div>
 
               <div className="text-center mt-4 text-white uppercase">
-                <h3 className="text-2xl font-semibold tracking-wide mb-1">
+                <h3
+                  className="text-2xl font-semibold tracking-wide mb-1"
+                  // style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
+                >
                   {ninja.name}
                 </h3>
                 <p className="text-gray-300 tracking-wide">{ninja.position}</p>
