@@ -3,12 +3,12 @@ export const events = [
     slug: "metron",
     title: "METRON",
     description: "Unleash your coding genius, and win epic prizes!",
-    bgImage: "/images/metron-bg.png",
+    bgImage: "/metron-bg.png",
     themeColor: "#00aa88",
     registerLink: "#",
-    logo: "/logos/slider-logo.png",
+    logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
-    eventPhotos: "/images/sample.jpeg",
+    eventPhotos: "/event-sample.jpeg",
   },
   {
     slug: "badlav",
@@ -19,7 +19,7 @@ export const events = [
     registerLink: "#",
     logo: "/logos/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
-    eventPhotos: "/images/sample.jpeg",
+    eventPhotos: "/event-sample.jpeg",
   },
   {
     slug: "cyberbreach",
@@ -31,7 +31,7 @@ export const events = [
     registerLink: "#",
     logo: "/logos/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
-    eventPhotos: "/images/sample.jpeg",
+    eventPhotos: "/event-sample.jpeg",
   },
   {
     slug: "sample-event-4",
@@ -43,7 +43,7 @@ export const events = [
     registerLink: "#",
     logo: "/logos/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
-    eventPhotos: "/images/sample.jpeg",
+    eventPhotos: "/event-sample.jpeg",
   },
   {
     slug: "sample-event-5",
@@ -53,8 +53,8 @@ export const events = [
     bgImage: "/images/cyber-bg.png",
     themeColor: "#ff3300",
     registerLink: "#",
-    logo: "/logos/slider-logo.png",
+    logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
-    eventPhotos: "/images/sample.jpeg",
+    eventPhotos: "/event-sample.jpeg",
   },
 ];  
