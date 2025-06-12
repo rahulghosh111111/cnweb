@@ -7,7 +7,7 @@ import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 
-{/* FAQ data */}
+{/* FAQ data */ }
 const faqs = [
   {
     question: "What is CodingNinjas KIIT ?",
@@ -30,26 +30,26 @@ const faqs = [
   },
 ];
 
-{/* Domains data */}
+{/* Domains data */ }
 const domains = [
-    {
-      title: "WEB",
-      description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
-    },
-    {
-      title: "CLOUD COMPUTING",
-      description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
-    },
-    {
-      title: "Marketing",
-      description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
-    },
-  ];
+  {
+    title: "WEB",
+    description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
+  },
+  {
+    title: "CLOUD COMPUTING",
+    description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
+  },
+  {
+    title: "Marketing",
+    description: "dolor in reprehenderit in voluptate velit esse cillum dolore eu",
+  },
+];
 
 
 
-{/* Why join us (Features) data */}
-  const features = [
+{/* Why join us (Features) data */ }
+const features = [
   {
     title: "Real-World Challenges, Real Skills",
     icon: "↔️", // Replace with proper SVG if needed
@@ -84,7 +84,7 @@ const domains = [
 
 
 
-function page() {
+function Page() {
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -127,19 +127,19 @@ function page() {
       {/* Why Join Us and Our Domains */}
       <div className='bg-gradient-to-b from-[#242121] to-[#C06B20] border-t border-r border-white pt-10 pb-20 px-4'>
         <div className="bg-transparent py-12 px-4 sm:px-6 lg:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="bg-[#FF8820] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300"
-          >
-            <div className="text-3xl mb-4">{feature.icon}</div>
-            <h3 className="text-white text-xl font-semibold mb-2">{feature.title}</h3>
-            <p className="text-gray-300 text-sm">{feature.description}</p>
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-[#FF8820] rounded-2xl p-6 shadow-md hover:shadow-white transition duration-300"
+              >
+                <div className="text-3xl mb-4">{feature.icon}</div>
+                <h3 className="text-white text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-300 text-sm">{feature.description}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
 
         <section className="py-16">
           <h2 className="text-[60px] sm:text-[80px] md:text-[100px] text-center font-bold text-[#FF8820] mb-12">Our Domains</h2>
@@ -212,4 +212,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
