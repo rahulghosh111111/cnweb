@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { domainsData } from '@/app/data/domainsData';
+import { domainsData } from '@/components/data/domainsData';
 import DomainSection from '@/components/Members/DomainSection';
 
 export default function DomainScroll({ currentDomain, setCurrentDomain, scrollContainerRef }) {
