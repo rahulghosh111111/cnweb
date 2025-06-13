@@ -42,7 +42,7 @@ const features = [
 export default function WhyJoinUs() {
   return (
     <div className='bg-gradient-to-b from-[#2F2B2B] to-[#FF8820] pt-10 pb-20 px-4'>
-      <h2 className="text-4xl sm:text-[60px] md:text-[80px] font-bold text-[#FF8820] text-center mb-12">
+      <h2 className="text-6xl sm:text-[60px] md:text-[80px] font-bold text-[#FF8820] text-center mb-12">
         Why Join Us
       </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

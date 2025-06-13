@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className='flex flex-col md:flex-row  justify-center items-center min-h-screen bg-[#2F2B2B] pt-10 px-4'>
       <div className="w-full md:w-1/2 md:h-1/2 text-left">
-        <h1 className="text-4xl sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] mb-6 md:text-center text-center">
+        <h1 className="text-6xl sm:text-[80px] md:text-[100px] font-bold text-[#FF8820] mb-6 md:text-center text-center">
           About us
         </h1>
         <div className="text-[#FF8820] text-[16px] sm:text-[18px] md:text-[20px] md:ml-8 space-y-3">

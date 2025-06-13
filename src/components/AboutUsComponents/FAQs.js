@@ -34,7 +34,7 @@ export default function FAQs() {
 
   return (
     <section className=" bg-[#FF8820] py-6 md:py-12 ">
-          <div className="bg-[#4a2d1f] rounded-3xl px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10 flex flex-col lg:flex-row items-center justify-between gap-4 max-w-6xl mx-auto shadow-lg mr-4 lg:mr-8 ml-4 lg:ml-8">
+          <div className="bg-[#4a2d1f] rounded-3xl px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10 flex flex-col lg:flex-row items-center justify-between gap-4 max-w-6xl mx-auto shadow-lg mr-4 lg:mr-8 ml-4 lg:ml-14 ">
   
   {/* Image Section — hidden on mobile & tablet, visible only on desktop */}
   <div className="w-full lg:w-1/2 flex flex-col items-center relative">
