@@ -72,7 +72,7 @@ export default function ContactPage() {
               CONTACT US
             </h1>
             <p className="text-xl text-[#bfbfbd] max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's start a conversation.
+              Ready to bring your ideas to life? Let&apos;s start a conversation.
             </p>
           </motion.div>
 
@@ -180,7 +180,7 @@ export default function ContactPage() {
               <div className="relative bg-gradient-to-br from-[#1a1616]/95 to-[#0c0c0c]/95 backdrop-blur-xl rounded-3xl p-8 sm:p-10 border border-gray-800/50">
                 
                 <h2 className="text-3xl font-bold text-white mb-2">Send Your Message</h2>
-                <p className="text-[#bfbfbd] mb-8">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <p className="text-[#bfbfbd] mb-8">We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Field */}
