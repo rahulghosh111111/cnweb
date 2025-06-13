@@ -1,17 +1,31 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "@/components/data/eventsData";
+import { events } from "../../components/data/eventsData";
+import EventComponent from "../../components/Events/EventComponent";
 
 export default function EventsPage() {
+  const [currentEvent, setCurrentEvent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentEvent((prev) => (prev + 1) % events.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
-      className="min-h-screen px-4 py-10"
+      className="min-h-screen pt-10 overflow-x-hidden"
       style={{
         background: "linear-gradient(to top, #72231a 0%, #4e3a35 100%)",
       }}
     >
-      <div className="max-w-6xl mx-auto mt-9">
-        {/* Custom grid for heading + 1st and 2nd card */}
+      <div className="max-w-6xl mx-auto mt-12">
+        {/* Hero Section */}
         <div className="grid grid-cols-[2fr_1fr] gap-4 mb-8 items-stretch">
           <div>
             <div className="text-white text-6xl font-bold text-center py-10">
@@ -19,7 +33,7 @@ export default function EventsPage() {
               <p>OF</p>
               <p>FAME</p>
             </div>
-            <Link href={`/events/${events[0].slug}`}>
+            <Link href="">
               <div className="mt-4 group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white">
                 <div className="relative h-48">
                   <Image
@@ -44,8 +58,7 @@ export default function EventsPage() {
             </Link>
           </div>
 
-          {/* Second card with reduced width */}
-          <Link href={`/events/${events[1].slug}`}>
+          <Link href="">
             <div className="group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white h-full">
               <div className="relative h-full min-h-[300px]">
                 <Image
@@ -70,10 +83,10 @@ export default function EventsPage() {
           </Link>
         </div>
 
-        {/* Remaining cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* Remaining Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           {events.slice(2).map((event) => (
-            <Link key={event.slug} href={`/events/${event.slug}`}>
+            <Link key={event.slug} href="">
               <div className="group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white">
                 <div className="relative h-48">
                   <Image
@@ -98,6 +111,16 @@ export default function EventsPage() {
             </Link>
           ))}
         </div>
+
+        {/* Slideshow Section */}
+        <section className="relative w-full flex flex-col items-center justify-center mb-20">
+          <EventComponent
+            {...events[currentEvent]}
+            positionIndex={currentEvent}
+            totalEvents={events.length}
+            setCurrent={setCurrentEvent}
+          />
+        </section>
       </div>
     </div>
   );

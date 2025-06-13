@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SliderNavigator from "../../components/Events/SliderNavigator";
 
 const EventComponent = ({
   title,
@@ -10,55 +11,49 @@ const EventComponent = ({
   positionIndex,
   totalEvents,
   registrationInfo,
-  eventPhotos
+  eventPhotos,
+  setCurrent,
 }) => {
-  const positionPercent = (positionIndex / (totalEvents - 1)) * 100;
-
   return (
     <div
-      className="min-h-screen w-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style={{ backgroundImage: `url(${bgImage})`,
-               height: '100dvh' 
-       }}
+      className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-between items-center overflow-hidden box-border"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
     >
-      <div className="w-150 text-white">
-        <h1 className="text-5xl font-bold mb-2">{title}</h1>
-        <p className="text-2xl mb-20">{description}</p>
-        <a
-          href={registerLink}
-          className="px-5 py-2 rounded-lg font-semibold text-white"
-          style={{ backgroundColor: themeColor }}
-        >
-          {registrationInfo}
-        </a>
+      {/* Hero Content */}
+      <div className="w-full max-w-6xl mx-auto text-white flex flex-wrap justify-evenly items-start gap-5 px-4 overflow-x-hidden">
+        <div className="mt-60">
+          <h1 className="text-5xl font-bold mb-2">{title}</h1>
+          <p className="text-2xl mb-8 max-w-xl">{description}</p>
+          <a
+            href={registerLink}
+            className="px-5 py-2 rounded-lg font-semibold text-white inline-block"
+            style={{ backgroundColor: themeColor }}
+          >
+            {registrationInfo}
+          </a>
+        </div>
 
-        
-      </div>
-      <div className=" " >
-        <Image
+        <div className="shrink-0 overflow-hidden max-w-full">
+          <Image
             src={eventPhotos}
             alt="event-photos"
             width={400}
-          height={300}
-          className="rounded-3xl shadow-lg mt-10 ml-15"
+            height={300}
+            className="rounded-3xl shadow-lg object-contain mt-60"
+          />
+        </div>
+      </div>
+
+      {/* Slider Navigator */}
+      <div className="mt-8 w-full flex justify-center px-4">
+        <SliderNavigator
+          total={totalEvents}
+          current={positionIndex}
+          setCurrent={setCurrent}
         />
       </div>
-      <div className="fixed mt-150 h-1.5 w-150 bg-black/60 rounded-full">
-          <div
-            className="absolute top-1/2 transform -translate-y-1/2 h-12"
-            style={{
-              left: `calc(${positionPercent}% - 50px)`,
-            }}
-          >
-            <Image
-              src={logo}
-              alt="event-logo"
-              width={50}
-              height={50}
-              className="rounded-full shadow-lg"
-            />
-          </div>
-        </div>
     </div>
   );
 };
