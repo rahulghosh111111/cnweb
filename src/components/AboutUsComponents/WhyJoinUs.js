@@ -48,7 +48,7 @@ const features = [
 
 export default function WhyJoinUs() {
   return (
-    <section className="relative py-16 md:py-24 px-4 overflow-hidden bg-gradient-to-b from-[#1c1919] to-[#0d0d0d]">
+    <section className="relative py-16 md:pb-24 px-4 overflow-hidden bg-gradient-to-b from-[#1c1919] to-[#0d0d0d]">
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.h2
           initial={{ opacity: 0 }}
@@ -100,6 +100,8 @@ export default function WhyJoinUs() {
                   <p className="text-gray-400 text-sm flex-grow h-auto">
                     {feature.description}
                   </p>
+
+                  <div className="w-12 h-1 mt-5 bg-gradient-to-r from-[#fa5935] to-[#FF8820]  rounded-full group-hover:w-full transition-all duration-500"></div>
                 </div>
               </div>
             </motion.div>
@@ -107,6 +109,7 @@ export default function WhyJoinUs() {
         </div>
       </div>
 
+      {/* Bottom decorative element */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#8d0e0e] via-[#FF8820] to-[#fa5935]"></div>
     </section>
   );
