@@ -16,7 +16,10 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="relative z-10">
           <div className="flex justify-between items-center mb-10 flex-col lg:flex-row">
-            <h2 className="text-6xl font-bold uppercase tracking-wider bg-gradient-to-r from-red-600 to-red-900 bg-clip-text text-transparent">
+            <h2
+              className="text-6xl font-bold uppercase tracking-wider bg-gradient-to-r from-red-600 to-red-900 bg-clip-text text-transparent"
+              style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
+            >
               ABOUT US
             </h2>
             <Link
@@ -38,21 +41,36 @@ const AboutSection = () => {
 
               <div className="grid grid-cols-3 lg:gap-6 gap-4 bg-white/10 lg:mt-12 mt-8 rounded-2xl p-5">
                 <div className=" text-center border-r border-white/20 pr-6">
-                  <h3 className="lg:text-4xl text-3xl font-bold text-white">
+                  <h3
+                    className="lg:text-4xl text-3xl font-bold text-white"
+                    style={{
+                      fontFamily: "'Gang of Three', Arial, sans-serif",
+                    }}
+                  >
                     10+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Projects</p>
                 </div>
 
                 <div className=" text-center border-r border-white/20 pr-6">
-                  <h3 className="lg:text-4xl text-3xl font-bold text-white">
+                  <h3
+                    className="lg:text-4xl text-3xl font-bold text-white"
+                    style={{
+                      fontFamily: "'Gang of Three', Arial, sans-serif",
+                    }}
+                  >
                     10+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Events</p>
                 </div>
 
                 <div className=" text-center">
-                  <h3 className="lg:text-4xl text-3xl font-bold text-white">
+                  <h3
+                    className="lg:text-4xl text-3xl font-bold text-white"
+                    style={{
+                      fontFamily: "'Gang of Three', Arial, sans-serif",
+                    }}
+                  >
                     10+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Members</p>

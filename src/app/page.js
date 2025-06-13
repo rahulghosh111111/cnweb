@@ -14,8 +14,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection/>
       <OurNinjas/>
-      <OurEvents/>
-      <ProjectsSection/>
+      <OurEvents />  
+      {/* <ProjectsSection/> */}
       <Alumini/>
       <JoinTeam/>
     </div>

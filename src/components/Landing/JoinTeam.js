@@ -5,7 +5,7 @@ const JoinTeam = () => {
     <div className="bg-gradient-to-b from-yellow-500 to-black min-h-[200px] flex flex-col sm:flex-row items-center justify-between px-6 sm:px-20 py-10">
       
       <div className="text-center sm:text-left text-white font-bold text-3xl sm:text-4xl mb-6 sm:mb-0">
-        <h1>JOIN OUR TEAM</h1>
+        <h1 style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}>JOIN OUR TEAM</h1>
       </div>
 
       <div className="flex justify-center">

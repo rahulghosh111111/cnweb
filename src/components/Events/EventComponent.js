@@ -16,7 +16,7 @@ const EventComponent = ({
 
   return (
     <div
-      className="fixed top-0 left-0 w-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      className="min-h-screen w-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{ backgroundImage: `url(${bgImage})`,
                height: '100dvh' 
        }}
@@ -40,7 +40,7 @@ const EventComponent = ({
             alt="event-photos"
             width={400}
           height={300}
-          className="rounded-3xl shadow-lg mt-10 ml-20"
+          className="rounded-3xl shadow-lg mt-10 ml-15"
         />
       </div>
       <div className="fixed mt-150 h-1.5 w-150 bg-black/60 rounded-full">
