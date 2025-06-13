@@ -1,6 +1,6 @@
 @import 'https://fonts.cdnfonts.com/css/gang-of-three';
-@import 'https://fonts.googleapis.com/css2?family=Paytone+One&display=swap';
 @import "tailwindcss";
+@import 'https://fonts.cdnfonts.com/css/gang-of-three';
 
 :root {
   --background: #ffffff;
