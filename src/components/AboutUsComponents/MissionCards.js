@@ -28,7 +28,7 @@ const missionCards = [
 export default function MissionCards() {
 	return (
 		<section className="relative sm:py-20 py-12  px-4 overflow-hidden bg-gradient-to-b from-black to-[#1c1919]">
-			{/* Adding subtle grid overlay for consistency */}
+
 			<div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-15 mix-blend-soft-light"></div>
 
 			<div className="max-w-7xl mx-auto relative z-10">
@@ -79,7 +79,6 @@ export default function MissionCards() {
 			<div className="absolute top-1/3 -right-20 w-64 h-64 rounded-full bg-gradient-to-br from-[#fa5935]/5 to-transparent blur-[100px]"></div>
 			<div className="absolute bottom-1/3 -left-20 w-64 h-64 rounded-full bg-gradient-to-br from-[#FF8820]/5 to-transparent blur-[100px]"></div>
 
-			{/* Add connecting element at the bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-b from-[#1c1919] to-[#1c1919]"></div>
 		</section>
 	);
