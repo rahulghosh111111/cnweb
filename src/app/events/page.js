@@ -1,8 +1,10 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "../data/eventsData";
-import EventComponent from "../../components/EventComponent";
+import { events } from "../../components/data/eventsData";
+import EventComponent from "../../components/Events/EventComponent";
 
 export default function EventsPage() {
   const [currentEvent, setCurrentEvent] = useState(0);
