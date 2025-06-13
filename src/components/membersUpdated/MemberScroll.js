@@ -257,7 +257,7 @@ const MemberScroll = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#0d0d0d] to-black relative overflow-hidden pb-20 pt-0 sm:pt-14 px-4 sm:px-6 lg:px-8 xl:pl-10 xl:pr-20">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#0d0d0d] to-black relative overflow-hidden pb-20 pt-0 sm:pt-14 px-0 sm:px-6 lg:px-8 xl:pl-10 xl:pr-20">
       
       <div className="relative z-10 py-4">
         <div className="mx-auto max-w-full">
@@ -324,7 +324,7 @@ const MemberScroll = () => {
                           </button>
 
                           {/* All Cards Scrollable Container for Mobile */}
-                          <div className="overflow-hidden mx-8">
+                          <div className="overflow-hidden mx-6 pl-1.5">
                             <div 
                               ref={(el) => scrollRefs.current[domainName] = el}
                               className="flex space-x-4 overflow-x-auto scrollbar-hide py-4"
