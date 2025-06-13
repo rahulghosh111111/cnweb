@@ -30,7 +30,6 @@ export const SparklesCore = ({
     handleResize();
     window.addEventListener("resize", handleResize);
     
-    // Create particles
     particles.current = Array.from({ length: particleDensity }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -52,7 +51,6 @@ export const SparklesCore = ({
         particle.x += particle.directionX * particle.speed;
         particle.y += particle.directionY * particle.speed;
         
-        // Bounce off edges
         if (particle.x < 0 || particle.x > canvas.width) {
           particle.directionX *= -1;
         }
