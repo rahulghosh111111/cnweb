@@ -28,7 +28,7 @@ export default function EventsPage() {
 
   return (
     <div
-      className="min-h-screen pt-10 overflow-x-hidden px-4"
+      className="min-h-screen pt-10 overflow-x-hidden px-4 sm:px-6 md:px-8"
       style={{
         background: "linear-gradient(to top, #72231a 0%, #4e3a35 100%)",
       }}
@@ -43,7 +43,7 @@ export default function EventsPage() {
               <p>FAME</p>
             </div>
             <Link href="">
-              <div className="mt-4 relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-60">
+              <div className="mt-4 relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-48 sm:h-60">
                 <Image
                   src={events[0].bgImage}
                   alt={events[0].title}
@@ -60,7 +60,7 @@ export default function EventsPage() {
           </div>
 
           <Link href="">
-            <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-60">
+            <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-64 sm:h-full min-h-[300px]">
               <Image
                 src={events[1].bgImage}
                 alt={events[1].title}
@@ -77,10 +77,10 @@ export default function EventsPage() {
         </div>
 
         {/* Remaining Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12">
           {events.slice(2).map((event) => (
             <Link key={event.slug} href="">
-              <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-60">
+              <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-64">
                 <Image
                   src={event.bgImage}
                   alt={event.title}
