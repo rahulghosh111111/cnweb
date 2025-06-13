@@ -274,7 +274,7 @@ export default function AlumniSection() {
               {/* Avatar with improved gradient border */}
               <div className="relative group">
                 <motion.div
-                  className={`absolute -inset-1 bg-gradient-to-r from-[#fa5935] to-[#FF8820] rounded-full transition-all duration-300 ${
+                  className={`absolute -inset-[1px] bg-gradient-to-r from-[#fa5935] to-[#FF8820] rounded-full transition-all duration-300 ${
                     idx === current
                       ? "opacity-100 blur-sm"
                       : "opacity-0 group-hover:opacity-60"
@@ -324,8 +324,6 @@ export default function AlumniSection() {
                   />
                 </motion.div>
               </div>
-
-              {/* Name and role - with staggered entrance */}
               <AnimatePresence mode="wait">
                 {idx === current && (
                   <motion.div
