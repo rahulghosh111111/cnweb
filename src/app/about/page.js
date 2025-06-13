@@ -11,7 +11,6 @@ export default function Page() {
   return (
     
     <div>
-      {/* Other content */}
       <AboutUs />
       <MissionCards />
       <WhyJoinUs />
