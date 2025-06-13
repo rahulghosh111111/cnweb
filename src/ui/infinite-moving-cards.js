@@ -16,7 +16,7 @@ export const InfiniteMovingCards = ({
     switch(speed) {
       case "slow": return "20s";
       case "medium": return "20s";
-      default: return "20s"; // fast
+      default: return "20s"; 
     }
   };
 
