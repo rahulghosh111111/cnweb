@@ -178,7 +178,7 @@ export default function AlumniSection() {
             onClick={prev}
             aria-label="Previous"
           >
-            <ChevronLeft className="w-6 h-6 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
+            <ChevronLeft className="w-6 h-6 text-white group-hover:text-[#fa5935] hidden sm:block transition-colors duration-300" />
           </motion.button>
 
           <motion.button
@@ -188,7 +188,7 @@ export default function AlumniSection() {
             onClick={next}
             aria-label="Next"
           >
-            <ChevronRight className="w-6 h-6 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
+            <ChevronRight className="w-6 h-6 text-white group-hover:text-[#fa5935] hidden sm:block transition-colors duration-300" />
           </motion.button>
 
           {/* Testimonial card with improved layered shadows */}
