@@ -83,7 +83,6 @@ const AboutUs = () => {
           </p>
         </motion.div>
 
-        {/* Expertise Slider - takes up most of the vertical space */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -100,7 +99,6 @@ const AboutUs = () => {
           </div>
         </motion.div>
 
-        {/* Bottom Quote */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
