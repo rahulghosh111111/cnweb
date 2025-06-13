@@ -9,6 +9,7 @@ export const events = [
     logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
     eventPhotos: "/event-sample.jpeg",
+    mobileBgImage: "/metron-bg-mobile.png",
   },
   {
     slug: "badlav",
@@ -20,6 +21,7 @@ export const events = [
     logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
     eventPhotos: "/event-sample.jpeg",
+    mobileBgImage: "/badlav-bg-mobile.png",
   },
   {
     slug: "cyberbreach",
@@ -32,6 +34,7 @@ export const events = [
     logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
     eventPhotos: "/event-sample.jpeg",
+    mobileBgImage: "/cyber-bg-mobile.png",
   },
   {
     slug: "sample-event-4",
@@ -44,6 +47,7 @@ export const events = [
     logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
     eventPhotos: "/event-sample.jpeg",
+    mobileBgImage: "/cyber-bg-mobile.png",
   },
   {
     slug: "sample-event-5",
@@ -56,5 +60,6 @@ export const events = [
     logo: "/slider-logo.png",
     registrationInfo: "REGISTRATIONS CLOSED",
     eventPhotos: "/event-sample.jpeg",
+    mobileBgImage: "/cyber-bg-mobile.png",
   },
 ];  
