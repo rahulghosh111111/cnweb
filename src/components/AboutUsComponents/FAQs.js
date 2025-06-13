@@ -126,7 +126,6 @@ export default function FAQs() {
 				</div>
 			</div>
 
-			{/* Bottom connector */}
 			<div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#8d0e0e] via-[#FF8820] to-[#fa5935]"></div>
 		</section>
 	);
