@@ -7,40 +7,40 @@ import { InfiniteMovingCards } from '@/ui/infinite-moving-cards';
 import { Globe, Smartphone, Palette, Cloud, Brain, TrendingUp } from 'lucide-react';
 
 const domains = [
-  {
+{
     id: 1,
     title: "Web Development",
-    description: "Creating responsive websites with modern frameworks and cutting-edge technologies.",
+    description: "Modern responsive website creation",
     icon: <Globe className="h-8 w-8 text-[#fa5935]" />
   },
   {
     id: 2,
     title: "Mobile Development",
-    description: "Building cross-platform mobile apps for iOS and Android with seamless user experiences.",
+    description: "Cross-platform mobile app development",
     icon: <Smartphone className="h-8 w-8 text-[#fa5935]" />
   },
   {
     id: 3,
     title: "UI/UX Design",
-    description: "Crafting beautiful interfaces and intuitive experiences that users love.",
+    description: "Beautiful intuitive user interfaces",
     icon: <Palette className="h-8 w-8 text-[#fa5935]" />
   },
   {
     id: 4,
     title: "Cloud Solutions",
-    description: "Implementing scalable cloud infrastructure for modern digital applications.",
+    description: "Scalable modern cloud infrastructure",
     icon: <Cloud className="h-8 w-8 text-[#fa5935]" />
   },
   {
     id: 5,
     title: "AI Integration",
-    description: "Leveraging artificial intelligence to create smarter, more adaptive solutions.",
+    description: "Smart adaptive AI solutions",
     icon: <Brain className="h-8 w-8 text-[#fa5935]" />
   },
   {
     id: 6,
     title: "Digital Marketing",
-    description: "Strategic campaigns that increase visibility and drive meaningful engagement.",
+    description: "Strategic visibility driving engagement",
     icon: <TrendingUp className="h-8 w-8 text-[#fa5935]" />
   }
 ];
