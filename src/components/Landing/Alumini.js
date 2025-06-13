@@ -174,7 +174,7 @@ export default function AlumniSection() {
           <motion.button
             whileHover={{ scale: 1.1, x: -5 }}
             whileTap={{ scale: 0.92 }}
-            className="absolute left-4 md:-left-16 top-1/2 -translate-y-1/2 z-20 p-3 bg-gradient-to-r from-[#1a1616]/90 to-[#0c0c0c]/90 backdrop-blur-xl rounded-full border border-gray-800/50 hover:border-[#fa5935]/50 transition-all duration-300 group shadow-lg hover:shadow-[#fa5935]/15"
+            className="absolute left-4 md:-left-16 top-1/2 hidden sm:block -translate-y-1/2 z-20 p-3 bg-gradient-to-r from-[#1a1616]/90 to-[#0c0c0c]/90 backdrop-blur-xl rounded-full border border-gray-800/50 hover:border-[#fa5935]/50 transition-all duration-300 group shadow-lg hover:shadow-[#fa5935]/15"
             onClick={prev}
             aria-label="Previous"
           >
@@ -184,7 +184,7 @@ export default function AlumniSection() {
           <motion.button
             whileHover={{ scale: 1.1, x: 5 }}
             whileTap={{ scale: 0.92 }}
-            className="absolute right-4 md:-right-16 top-1/2 -translate-y-1/2 z-20 p-3 bg-gradient-to-r from-[#1a1616]/90 to-[#0c0c0c]/90 backdrop-blur-xl rounded-full border border-gray-800/50 hover:border-[#fa5935]/50 transition-all duration-300 group shadow-lg hover:shadow-[#fa5935]/15"
+            className="absolute right-4 md:-right-16 top-1/2 hidden sm:block -translate-y-1/2 z-20 p-3 bg-gradient-to-r from-[#1a1616]/90 to-[#0c0c0c]/90 backdrop-blur-xl rounded-full border border-gray-800/50 hover:border-[#fa5935]/50 transition-all duration-300 group shadow-lg hover:shadow-[#fa5935]/15"
             onClick={next}
             aria-label="Next"
           >
