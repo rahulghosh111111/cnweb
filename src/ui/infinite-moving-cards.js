@@ -42,11 +42,11 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <motion.div
             key={`${item.id}-${idx}`}
-            className="flex-shrink-0 w-[350px] mx-4"
+            className="flex-shrink-0 w-[310px] mx-4"
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           >
             <div className="bg-gradient-to-br from-[#8d0e0e]/30 to-black/80 backdrop-blur-md border border-[#fa5935]/20 rounded-xl overflow-hidden">
-              <div className="p-6 h-full flex flex-col">
+              <div className="p-4 py-6 h-full flex flex-col">
                 {/* {item.icon && (
                   <div className="mb-4 flex justify-center">{item.icon}</div>
                 )} */}
