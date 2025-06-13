@@ -18,15 +18,14 @@ export const BackgroundBeams = ({ className }) => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
     
-    // Create beams with the new color scheme
     const beams = [];
     const beamCount = 10;
     
     for (let i = 0; i < beamCount; i++) {
       const useRedColor = Math.random() > 0.5;
       const color = useRedColor 
-        ? `rgba(141, 14, 14, ${Math.random() * 0.3 + 0.1})` // #8d0e0e with opacity
-        : `rgba(250, 89, 53, ${Math.random() * 0.3 + 0.1})`; // #fa5935 with opacity
+        ? `rgba(141, 14, 14, ${Math.random() * 0.3 + 0.1})` // #8d0e0e 
+        : `rgba(250, 89, 53, ${Math.random() * 0.3 + 0.1})`; // #fa5935 
       
       beams.push({
         x: Math.random() * canvas.width,
