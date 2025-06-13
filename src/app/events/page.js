@@ -1,10 +1,8 @@
-"use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { events } from "../../components/data/eventsData";
-import EventComponent from "../../components/Events/EventComponent";
+import { events } from "../data/eventsData";
+import EventComponent from "../../components/EventComponent";
 
 export default function EventsPage() {
   const [currentEvent, setCurrentEvent] = useState(0);
@@ -16,6 +14,16 @@ export default function EventsPage() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const GlassInfoOverlay = ({ title, date, description }) => (
+    <div className="absolute bottom-0 w-full px-4 py-3 bg-white/10 backdrop-blur-md border-t border-white/20">
+      <div className="flex justify-between items-center">
+        <h2 className="text-lg font-semibold text-white">{title}</h2>
+        <p className="text-sm text-gray-200 italic">{date || "Coming Soon"}</p>
+      </div>
+      <p className="text-sm text-gray-300 mt-1 line-clamp-2">{description}</p>
+    </div>
+  );
 
   return (
     <div
@@ -34,51 +42,35 @@ export default function EventsPage() {
               <p>FAME</p>
             </div>
             <Link href="">
-              <div className="mt-4 group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white">
-                <div className="relative h-48">
-                  <Image
-                    src={events[0].bgImage}
-                    alt={events[0].title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="px-4 py-3 bg-neutral-700">
-                  <div className="flex justify-between items-center">
-                    <h2 className="text-lg font-semibold">{events[0].title}</h2>
-                    <p className="text-sm text-gray-300 italic">
-                      {events[0].date || "Coming Soon"}
-                    </p>
-                  </div>
-                  <p className="text-sm text-gray-400 mt-1 line-clamp-2">
-                    {events[0].description}
-                  </p>
-                </div>
+              <div className="mt-4 relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-48">
+                <Image
+                  src={events[0].bgImage}
+                  alt={events[0].title}
+                  fill
+                  className="object-cover"
+                />
+                <GlassInfoOverlay
+                  title={events[0].title}
+                  date={events[0].date}
+                  description={events[0].description}
+                />
               </div>
             </Link>
           </div>
 
           <Link href="">
-            <div className="group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white h-full">
-              <div className="relative h-full min-h-[300px]">
-                <Image
-                  src={events[1].bgImage}
-                  alt={events[1].title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="px-4 py-3 bg-neutral-700">
-                <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-semibold">{events[1].title}</h2>
-                  <p className="text-sm text-gray-300 italic">
-                    {events[1].date || "Coming Soon"}
-                  </p>
-                </div>
-                <p className="text-sm text-gray-400 mt-1 line-clamp-2">
-                  {events[1].description}
-                </p>
-              </div>
+            <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-full min-h-[300px]">
+              <Image
+                src={events[1].bgImage}
+                alt={events[1].title}
+                fill
+                className="object-cover"
+              />
+              <GlassInfoOverlay
+                title={events[1].title}
+                date={events[1].date}
+                description={events[1].description}
+              />
             </div>
           </Link>
         </div>
@@ -87,26 +79,18 @@ export default function EventsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           {events.slice(2).map((event) => (
             <Link key={event.slug} href="">
-              <div className="group rounded-2xl overflow-hidden bg-neutral-800 hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md text-white">
-                <div className="relative h-48">
-                  <Image
-                    src={event.bgImage}
-                    alt={event.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="px-4 py-3 bg-neutral-700">
-                  <div className="flex justify-between items-center">
-                    <h2 className="text-lg font-semibold">{event.title}</h2>
-                    <p className="text-sm text-gray-300 italic">
-                      {event.date || "Coming Soon"}
-                    </p>
-                  </div>
-                  <p className="text-sm text-gray-400 mt-1 line-clamp-2">
-                    {event.description}
-                  </p>
-                </div>
+              <div className="relative group rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md h-64">
+                <Image
+                  src={event.bgImage}
+                  alt={event.title}
+                  fill
+                  className="object-cover"
+                />
+                <GlassInfoOverlay
+                  title={event.title}
+                  date={event.date}
+                  description={event.description}
+                />
               </div>
             </Link>
           ))}
