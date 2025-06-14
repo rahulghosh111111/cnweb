@@ -33,7 +33,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row lg:gap-20 gap-10 backdrop-blur-lg bg-black/50 rounded-3xl justify-between items-center p-6 lg:p-10">
             <div className="flex-1">
               <p className="lg:text-xl leading-relaxed">
-                We're a passionate community of coders, creators, and
+                We&apos;re a passionate community of coders, creators, and
                 collaborators, dedicated to transforming ideas into impactful
                 tech. At Coding Ninjas – KIIT Chapter, we bridge the gap between
                 classroom learning and real-world innovation through mentorship,
