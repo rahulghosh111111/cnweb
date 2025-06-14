@@ -10,7 +10,7 @@ const MemberScroll = () => {
       icon: Bot,
       color: 'from-[#fa5935] to-[#FF8820]',
       lead: {
-        name: 'Mitul Goswami',
+        name: 'Alex Kumar',
         role: 'LEAD',
         image: '/api/placeholder/300/400',
         social: {
@@ -21,7 +21,7 @@ const MemberScroll = () => {
       },
       members: [
         {
-          name: 'Twinkle Pal',
+          name: 'Samantha Chen',
           image: '/api/placeholder/300/400',
           social: {
             instagram: '#',
@@ -30,7 +30,7 @@ const MemberScroll = () => {
           }
         },
         {
-          name: 'Ahona Bar',
+          name: 'Raj Patel',
           image: '/api/placeholder/300/400',
           social: {
             instagram: '#',
@@ -39,7 +39,7 @@ const MemberScroll = () => {
           }
         },
         {
-          name: 'Nisharg Nargund',
+          name: 'Maya Singh',
           image: '/api/placeholder/300/400',
           social: {
             instagram: '#',
@@ -48,7 +48,7 @@ const MemberScroll = () => {
           }
         },
         {
-          name: 'Soham Roy',
+          name: 'David Wang',
           image: '/api/placeholder/300/400',
           social: {
             instagram: '#',
