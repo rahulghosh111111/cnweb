@@ -55,7 +55,7 @@ export default function MissionCards() {
 								y: -5,
 								transition: { duration: 0.3 },
 							}}
-							className="bg-[#1a1616] rounded-xl shadow-lg transform transition-all duration-300 border border-gray-800"
+							className="bg-[#131111] rounded-xl shadow-lg transform transition-all duration-300 border border-gray-800"
 						>
 							<div className="flex flex-col items-center p-8 h-full">
 								<div
