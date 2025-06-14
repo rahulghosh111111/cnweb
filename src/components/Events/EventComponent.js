@@ -33,15 +33,19 @@ const EventComponent = ({
     <div
       className="w-screen h-full bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center box-border"
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
       }}
     >
       {/* Hero Content */}
-      <div className="w-full max-w-5xl mx-auto text-white flex flex-col items-center justify-center px-4 py-10 md:py-16 relative">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 w-full">
-          <div className="md:w-1/2 flex flex-col items-start justify-center mt-32 sm:mt-24 lg:mt-32">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4">{title}</h1>
-            <p className="text-lg xl:text-xl mb-8 max-w-xl">{description}</p>
+      <div className="w-full max-w- mx-auto text-white flex flex-col items-center justify-between px-4 py-6 md:py-16 relative min-h-[85vh]">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full flex-1">
+          <div className="flex flex-col items-center md:items-start justify-center my-auto md:mt-24 lg:mt-32">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-center md:text-left">
+              {title}
+            </h1>
+            <p className="text-lg xl:text-xl mb-8 max-w-xl text-center md:text-left">
+              {description}
+            </p>
             <a
               href={registerLink}
               className="px-5 py-3 rounded-lg font-semibold text-white inline-block text-sm md:text-base transition-all hover:scale-105 shadow-md"
@@ -51,22 +55,11 @@ const EventComponent = ({
             </a>
           </div>
 
-          <div className="md:w-1/2 flex justify-center items-center mt-8 md:mt-24 lg:mt-32">
-            <div className="relative w-full max-w-[320px] md:max-w-[400px] lg:max-w-[400px] aspect-[4/3]">
-              <Image
-                src={eventPhotos}
-                alt="event-photos"
-                fill
-                className="rounded-2xl shadow-xl object-contain transform hover:scale-[1.02] transition-transform duration-300"
-                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 480px"
-                priority
-              />
-            </div>
-          </div>
+          {/* Comment out or remove the event photos section as it appears to be commented out already */}
         </div>
 
-        {/* Slider Navigator - Moved Inside */}
-        <div className="w-full flex justify-center mt-[90%] sm:mt-16">
+        {/* Slider Navigator - Positioned at bottom */}
+        <div className="w-full flex justify-center mt-8 md:mt-16 mb-4 md:mb-0">
           <SliderNavigator
             total={totalEvents}
             current={positionIndex}
