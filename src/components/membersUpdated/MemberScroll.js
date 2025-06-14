@@ -204,11 +204,11 @@ const MemberScroll = () => {
   };
 
   const MemberCard = ({ member, isLead = false }) => (
-    <div className={`relative group flex-shrink-0 ${isLead ? 'w-56 sm:w-64' : 'w-44 sm:w-52'}`}>
+    <div className={`relative group flex-shrink-0 ${isLead ? 'w-52 sm:w-64' : 'w-44 sm:w-52'}`}>
       <div className={`bg-gradient-to-br from-[#1c1919] to-[#0d0d0d] backdrop-blur-xl rounded-3xl overflow-hidden border border-gray-800/50 hover:border-[#fa5935]/50 transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl hover:shadow-[#fa5935]/20 ${isLead ? 'ring-2 ring-[#fa5935]/50 shadow-2xl shadow-[#FF8820]/25' : 'shadow-xl shadow-black/60'}`}>
         
         {/* Member Image */}
-        <div className={`relative overflow-hidden ${isLead ? 'h-48 sm:h-60' : 'h-40 sm:h-48'}`}>
+        <div className={`relative overflow-hidden ${isLead ? 'h-44 sm:h-60' : 'h-40 sm:h-48'}`}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#fa5935]/20 to-[#FF8820]/20 z-10"></div>
           <img
             src={member.image}
@@ -311,14 +311,14 @@ const MemberScroll = () => {
                           {/* Navigation Buttons for Mobile */}
                           <button
                             onClick={() => scrollLeft(domainName)}
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
+                            className="absolute hidden sm:block left-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
                           >
                             <ChevronLeft className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
                           </button>
                           
                           <button
                             onClick={() => scrollRight(domainName)}
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
+                            className="absolute hidden sm:block right-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
                           >
                             <ChevronRight className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
                           </button>
