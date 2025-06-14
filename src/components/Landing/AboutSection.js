@@ -33,10 +33,11 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row lg:gap-20 gap-10 backdrop-blur-lg bg-black/50 rounded-3xl justify-between items-center p-6 lg:p-10">
             <div className="flex-1">
               <p className="lg:text-xl leading-relaxed">
-                We&apos;re a small but mighty team, much like a focused group of
-                coding ninjas honing their skills in the digital dojo. Our
-                mission is to empower individuals with the knowledge and tools
-                to create digital wonders.
+                We're a passionate community of coders, creators, and
+                collaborators, dedicated to transforming ideas into impactful
+                tech. At Coding Ninjas – KIIT Chapter, we bridge the gap between
+                classroom learning and real-world innovation through mentorship,
+                teamwork, and hands-on experiences.
               </p>
 
               <div className="grid grid-cols-3 lg:gap-6 gap-4 bg-white/10 lg:mt-12 mt-8 rounded-2xl p-5">
