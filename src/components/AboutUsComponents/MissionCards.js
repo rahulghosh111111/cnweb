@@ -1,26 +1,26 @@
-import { BadgeCheck, Handshake, UserCheck } from "lucide-react";
+import { Rocket, Users, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const missionCards = [
 	{
-		title: "Quality",
+		title: "Empowerment",
 		description:
-			"We will always provide you the highest quality building at a price you can afford and we will always use all American steel.",
-		icon: <BadgeCheck className="h-10 w-10 text-white" />,
+			"We aim to equip students with practical coding skills, real-world tech exposure, and mentorship — enabling them to become confident problem-solvers and future tech leaders.",
+		icon: <Rocket className="h-10 w-10 text-white" />,
 		gradient: "from-[#8d0e0e]/80 to-[#fa5935]/80",
 	},
 	{
-		title: "Integrity",
+		title: "Collaboration",
 		description:
-			"We will provide honest upfront pricing. We will not cut corners or try to oversell a building just to make a sale.",
-		icon: <Handshake className="h-10 w-10 text-white" />,
+			"We foster a strong, inclusive community where learners support each other, work in teams, and grow together through cross-domain learning and innovative group projects.",
+		icon: <Users className="h-10 w-10 text-white" />,
 		gradient: "from-[#fa5935] to-[#8d0e0e]",
 	},
 	{
-		title: "Experience",
+		title: "Innovation",
 		description:
-			"We will provide qualified and trained design consultants, ensuring every building you buy is built to your exact needs.",
-		icon: <UserCheck className="h-10 w-10 text-white" />,
+			"Through hackathons, events, and hands-on projects, we encourage creative thinking, leadership, and a mindset of continuous improvement — bridging the gap between learning and career readiness.",
+		icon: <Sparkles className="h-10 w-10 text-white" />,
 		gradient: "from-[#FF8820] to-[#8d0e0e]",
 	},
 ];
