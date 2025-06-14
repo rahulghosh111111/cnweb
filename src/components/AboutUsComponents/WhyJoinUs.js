@@ -1,47 +1,47 @@
-import { Code2, Briefcase, User, Zap, Gift, Trophy } from "lucide-react";
+import { Code2, Briefcase, User, Zap, Gift, Trophy, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Real-World Challenges, Real Skills",
+    title: "Build Projects",
     icon: <Code2 className="text-white w-8 h-8" />,
     description:
-      "Why just study when you can build anCodingNinjas throws real-world problems your way—perfect to level ",
+      "Gain hands-on experience by working on tech solutions that mirror industry challenges.",
     gradient: "from-[#fa5935]/80 to-[#FF8820]/80",
   },
   {
-    title: "Placement Ready",
+    title: "Level Up Skills",
     icon: <Briefcase className="text-white w-8 h-8" />,
     description:
-      "CodingNinjas gives you the edge in coding rounds and interviews—walk into placements with confidence.",
+      "Strengthen your coding, problem-solving, and interview skills through continuous practice and mentorship.",
     gradient: "from-[#8d0e0e]/80 to-[#fa5935]/80",
   },
   {
-    title: "Spotlight on You",
-    icon: <User className="text-white w-8 h-8" />,
+    title: "Supportive Community",
+    icon: <Users className="text-white w-8 h-8" />,
     description:
-      "Win or not, your skills get noticed. Top scorers shine on leaderboards and in the eyes ",
+      "Learn and collaborate with like-minded peers in an inclusive and growth-driven environment.",
     gradient: "from-[#FF8820]/80 to-[#8d0e0e]/80",
   },
   {
-    title: "Learn by Doing",
+    title: "Hands-On Learning",
     icon: <Zap className="text-white w-8 h-8" />,
     description:
-      "Every round, every bug, every 'aha!' moment teaches you something new. This isn't just coding—it",
+      "Bridge the gap between theory and practice with workshops, hackathons, and live projects.",
     gradient: "from-[#fa5935]/80 to-[#FF8820]/80",
   },
   {
-    title: "Prizes & Perks",
+    title: "Get Recognized",
     icon: <Gift className="text-white w-8 h-8" />,
     description:
-      "Think swag, certificates, chances of entering the USC.KIIT community and meet other bright minds!",
+      "Shine through leaderboards, top performances, and contributions across events and challenges.",
     gradient: "from-[#8d0e0e]/80 to-[#fa5935]/80",
   },
   {
-    title: "Resume Booster",
+    title: "Lead and Innovate",
     icon: <Trophy className="text-white w-8 h-8" />,
     description:
-      "Show you don't just learn—you apply. CodingNinjas on your resume says: 'I compete. I code. I conquer.'",
+      "Explore leadership roles, cross-domain teamwork, and opportunities to turn ideas into action.",
     gradient: "from-[#FF8820]/80 to-[#8d0e0e]/80",
   },
 ];
@@ -71,7 +71,7 @@ export default function WhyJoinUs() {
           viewport={{ once: true }}
           className="text-gray-400 text-center max-w-2xl mx-auto mb-16"
         >
-          Discover the benefits of becoming part of our coding community
+          Discover the real value of being part of the Coding Ninjas – KIIT Chapter
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
