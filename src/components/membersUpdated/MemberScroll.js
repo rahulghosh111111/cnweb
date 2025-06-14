@@ -12,7 +12,7 @@ const MemberScroll = () => {
       lead: {
         name: 'Alex Kumar',
         role: 'LEAD',
-        image: '/api/placeholder/300/400',
+        image: '#',
         social: {
           instagram: '#',
           linkedin: '#',
@@ -22,7 +22,7 @@ const MemberScroll = () => {
       members: [
         {
           name: 'Samantha Chen',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -31,7 +31,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Raj Patel',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -40,7 +40,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Maya Singh',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -49,7 +49,7 @@ const MemberScroll = () => {
         },
         {
           name: 'David Wang',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -64,7 +64,7 @@ const MemberScroll = () => {
       lead: {
         name: 'John Doe',
         role: 'LEAD',
-        image: '/api/placeholder/300/400',
+        image: '#',
         social: {
           instagram: '#',
           linkedin: '#',
@@ -74,7 +74,7 @@ const MemberScroll = () => {
       members: [
         {
           name: 'Alice Smith',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -83,7 +83,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Bob Johnson',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -92,7 +92,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Carol Wilson',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -101,7 +101,7 @@ const MemberScroll = () => {
         },
         {
           name: 'David Brown',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -116,7 +116,7 @@ const MemberScroll = () => {
       lead: {
         name: 'Alex Kumar',
         role: 'LEAD',
-        image: '/api/placeholder/300/400',
+        image: '#',
         social: {
           instagram: '#',
           linkedin: '#',
@@ -126,7 +126,7 @@ const MemberScroll = () => {
       members: [
         {
           name: 'Lisa Zhang',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -135,7 +135,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Tom Rodriguez',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -144,7 +144,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Nina Patel',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -159,7 +159,7 @@ const MemberScroll = () => {
       lead: {
         name: 'Robert Kim',
         role: 'LEAD',
-        image: '/api/placeholder/300/400',
+        image: '#',
         social: {
           instagram: '#',
           linkedin: '#',
@@ -169,7 +169,7 @@ const MemberScroll = () => {
       members: [
         {
           name: 'Grace Liu',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
@@ -178,7 +178,7 @@ const MemberScroll = () => {
         },
         {
           name: 'Mark Taylor',
-          image: '/api/placeholder/300/400',
+          image: '#',
           social: {
             instagram: '#',
             linkedin: '#',
