@@ -260,7 +260,7 @@ const MemberScroll = () => {
     <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#0d0d0d] to-black relative overflow-hidden pb-20 pt-0 sm:pt-14 px-0 sm:px-6 lg:px-8 xl:pl-10 xl:pr-20">
       
       <div className="relative z-10 py-4">
-        <div className="mx-auto max-w-full">
+        <div className="mx-auto sm:max-w-full">
 
           {/* Domains */}
           <div className="space-y-16 sm:space-y-32">
@@ -288,7 +288,7 @@ const MemberScroll = () => {
                   </div>
 
                   {/* Domain Content */}
-                  <div className="sm:ml-16">
+                  <div className="sm:ml-16 ml-0">
                     {/* Domain Title Section */}
                     <div className="mb-8 sm:mb-16">
                       <div className="rounded-3xl pl-0 sm:pl-6 pt-3">
@@ -306,10 +306,10 @@ const MemberScroll = () => {
                     {/* Members Container */}
                     <div className="relative">
                       {/* Mobile Layout - All Cards Slide */}
-                      <div className="sm:hidden">
+                      <div className="sm:hidden px-3">
                         <div className="relative">
                           {/* Navigation Buttons for Mobile */}
-                          <button
+                          {/* <button
                             onClick={() => scrollLeft(domainName)}
                             className="absolute hidden sm:block left-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
                           >
@@ -321,10 +321,10 @@ const MemberScroll = () => {
                             className="absolute hidden sm:block right-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
                           >
                             <ChevronRight className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
-                          </button>
+                          </button> */}
 
                           {/* All Cards Scrollable Container for Mobile */}
-                          <div className="overflow-hidden mx-6 pl-1.5">
+                          <div className="overflow-hidden ">
                             <div 
                               ref={(el) => scrollRefs.current[domainName] = el}
                               className="flex space-x-4 overflow-x-auto scrollbar-hide py-4"
@@ -335,7 +335,7 @@ const MemberScroll = () => {
                               }}
                             >
                               {/* Lead Card First */}
-                              <div className="flex-shrink-0">
+                              <div className="flex-shrink-0 ml-2 ">
                                 <MemberCard member={domainData.lead} isLead={true} />
                               </div>
                               {/* Regular Members */}
