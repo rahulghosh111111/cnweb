@@ -6,7 +6,8 @@ const domains = [
   {
     title: "Web Development",
     description:
-      "Building responsive, interactive websites and web applications using modern frameworks and technologies.",
+      "Design and build responsive websites and full-stack platforms that turn creative ideas into powerful, user-centric digital experiences.",
+    technologies: ["Next.js", "JS", "React", "TS"],
     icon: "Code",
     slug: "web-development",
     colors: {
@@ -26,7 +27,8 @@ const domains = [
   {
     title: "Cloud Computing",
     description:
-      "Leveraging cloud platforms to deploy scalable applications, manage infrastructure, and optimize resources.",
+      "Learn to design, deploy, and manage scalable cloud systems that make applications faster, more secure, and highly reliable.",
+    technologies: ["AWS", "Azure", "GCP"],
     icon: "Cloud",
     slug: "cloud-computing",
     colors: {
@@ -44,11 +46,12 @@ const domains = [
     },
   },
   {
-    title: "Artificial Intelligence",
+    title: "Marketing",
     description:
-      "Making computers think, learn, and make decisions like humans to help with daily tasks.",
-    icon: "BrainCircuit",
-    slug: "artificial-intelligence",
+      "Drive the branding, communication, and online presence of the team. Plan campaigns, create content, and make our work seen and celebrated.",
+    technologies: ["Branding", "Content Strategy"],
+    icon: "LineChart",
+    slug: "marketing",
     colors: {
       topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
       circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
@@ -64,11 +67,108 @@ const domains = [
     },
   },
   {
-    title: "Marketing",
+    title: "App Development",
     description:
-      "Creating strategies to promote products and services, build brand awareness, and drive customer engagement.",
-    icon: "LineChart",
-    slug: "marketing",
+      "Create seamless and intuitive mobile applications focused on user experience, design flow, and performance across platforms.",
+    technologies: ["Android", "iOS", "Flutter", "Kotlin"],
+    icon: "Smartphone",
+    slug: "app-development",
+    colors: {
+      topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
+      circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
+      circle2: "bg-[#FF8820]/30 dark:bg-[#FF8820]/20",
+      iconText: "text-[#fa5935] dark:text-[#fa5935]",
+      iconShadow: "bg-[#fa5935]/30",
+      titleHover: "group-hover:text-[#fa5935] dark:group-hover:text-[#fa5935]",
+      btnBg: "bg-[#1a1616] dark:bg-[#0c0c0c]",
+      btnBgHover:
+        "group-hover:bg-[#fa5935]/10 dark:group-hover:bg-[#fa5935]/20",
+      btnIcon: "text-[#fa5935] dark:text-[#fa5935]",
+      underline: "bg-[#fa5935]",
+    },
+  },
+  {
+    title: "Social Team",
+    description:
+      "Connect with the community through engaging content and campaigns. Be the voice and vibe of our society across all social platforms.",
+    technologies: [
+      "Campaign",
+      "Creative Copy",
+      "Community Engagement",
+    ],
+    icon: "Users",
+    slug: "social-team",
+    colors: {
+      topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
+      circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
+      circle2: "bg-[#FF8820]/30 dark:bg-[#FF8820]/20",
+      iconText: "text-[#fa5935] dark:text-[#fa5935]",
+      iconShadow: "bg-[#fa5935]/30",
+      titleHover: "group-hover:text-[#fa5935] dark:group-hover:text-[#fa5935]",
+      btnBg: "bg-[#1a1616] dark:bg-[#0c0c0c]",
+      btnBgHover:
+        "group-hover:bg-[#fa5935]/10 dark:group-hover:bg-[#fa5935]/20",
+      btnIcon: "text-[#fa5935] dark:text-[#fa5935]",
+      underline: "bg-[#fa5935]",
+    },
+  },
+  {
+    title: "Machine Learning",
+    description:
+      "Explore AI and data science to build intelligent solutions. Work on projects that apply machine learning to real-world problems.",
+    technologies: ["Python", "TensorFlow", "Data Analysis"],
+    icon: "BrainCircuit",
+    slug: "machine-learning",
+    colors: {
+      topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
+      circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
+      circle2: "bg-[#FF8820]/30 dark:bg-[#FF8820]/20",
+      iconText: "text-[#fa5935] dark:text-[#fa5935]",
+      iconShadow: "bg-[#fa5935]/30",
+      titleHover: "group-hover:text-[#fa5935] dark:group-hover:text-[#fa5935]",
+      btnBg: "bg-[#1a1616] dark:bg-[#0c0c0c]",
+      btnBgHover:
+        "group-hover:bg-[#fa5935]/10 dark:group-hover:bg-[#fa5935]/20",
+      btnIcon: "text-[#fa5935] dark:text-[#fa5935]",
+      underline: "bg-[#fa5935]",
+    },
+  },
+  {
+    title: "Admin & Operations",
+    description:
+      "Plan and manage events, internal coordination, and team logistics. Act as the central force that ensures everything runs efficiently.",
+    technologies: [
+      "Management",
+      "Event Planning",
+      "Team Coordination",
+    ],
+    icon: "ClipboardList",
+    slug: "admin-operations",
+    colors: {
+      topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
+      circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
+      circle2: "bg-[#FF8820]/30 dark:bg-[#FF8820]/20",
+      iconText: "text-[#fa5935] dark:text-[#fa5935]",
+      iconShadow: "bg-[#fa5935]/30",
+      titleHover: "group-hover:text-[#fa5935] dark:group-hover:text-[#fa5935]",
+      btnBg: "bg-[#1a1616] dark:bg-[#0c0c0c]",
+      btnBgHover:
+        "group-hover:bg-[#fa5935]/10 dark:group-hover:bg-[#fa5935]/20",
+      btnIcon: "text-[#fa5935] dark:text-[#fa5935]",
+      underline: "bg-[#fa5935]",
+    },
+  },
+  {
+    title: "Cybersecurity",
+    description:
+      "Dive into ethical hacking and system protection. Safeguard our projects by detecting vulnerabilities and promoting secure digital practices.",
+    technologies: [
+      "Network Security",
+      "OWASP Top 10",
+      "Ethical Hacking",
+    ],
+    icon: "Shield",
+    slug: "cybersecurity",
     colors: {
       topBg: "bg-[#1a1616]/80 dark:bg-[#0c0c0c]",
       circle1: "bg-[#fa5935]/20 dark:bg-[#fa5935]/10",
