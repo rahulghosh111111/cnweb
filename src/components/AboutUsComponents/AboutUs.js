@@ -77,9 +77,7 @@ const AboutUs = () => {
           </h1>
           {/* <div className="w-32 h-1.5 bg-gradient-to-r from-[#fa5935] to-[#8d0e0e] mx-auto mb-8"></div> */}
           <p className="text-xl text-[#bfbfbd] max-w-2xl mx-auto leading-relaxed">
-            We&apos;re a team of passionate experts dedicated to transforming ideas into digital reality.
-            With cutting-edge technology and creative solutions, we help businesses thrive in the 
-            digital landscape.
+            We&apos;re a community of passionate tech enthusiasts, transforming ideas into impactful digital solutions. At Coding Ninjas – KIIT Chapter, we combine hands-on experience, real-world collaboration, and creative problem-solving to empower students and bridge the gap between learning and leading.
           </p>
         </motion.div>
 
@@ -106,8 +104,7 @@ const AboutUs = () => {
           className="text-center mt-8 mb-4"
         >
           <p className="text-lg text-[#bfbfbd] italic max-w-xl mx-auto">
-            &ldquo;We blend technical expertise with creative vision to build 
-            solutions that stand out in the digital world.&rdquo;
+            &ldquo;We code with purpose, learn with passion, and build with vision — shaping a future where every student leads through technology.&rdquo;
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-[#fa5935] to-[#8d0e0e] mx-auto mt-4"></div>
         </motion.div>
