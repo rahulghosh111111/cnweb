@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-// Enhanced metadata for better SEO
 export const metadata = {
   metadataBase: new URL("https://www.cnkiit.in"),
   title: {
@@ -71,10 +70,6 @@ export const metadata = {
       "Join the Coding Ninjas KIIT Chapter to enhance your programming skills and participate in tech events.",
     images: ["https://www.cnkiit.in/logo.png"],
   },
-  verification: {
-    // Add verification tokens if available
-    // google: "google-site-verification-token",
-  },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -89,7 +84,6 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <head>
-        {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -98,7 +92,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased flex flex-col min-h-screen">
-        {/* Skip to content accessibility link */}
         <a href="#main-content" className="sr-only focus:not-sr-only">
           Skip to content
         </a>
@@ -108,7 +101,6 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
 
-        {/* Structured data for organization */}
         <Script id="organization-schema" type="application/ld+json">
           {`{
               "@context": "https://schema.org",
