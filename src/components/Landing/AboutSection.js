@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -15,18 +16,19 @@ const AboutSection = () => {
     >
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="relative z-10">
-          <div className="flex justify-between items-center mb-10 flex-col lg:flex-row">
+          <div className="flex justify-between xl:px-8 items-center mb-10 flex-col lg:flex-row">
             <h2
-              className="text-6xl font-bold uppercase tracking-wider bg-gradient-to-r from-red-600 to-red-900 bg-clip-text text-transparent"
+              className="sm:text-6xl text-4xl font-bold  uppercase tracking-wider bg-gradient-to-r from-red-600 to-red-900 bg-clip-text text-transparent"
               style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
             >
               ABOUT US
             </h2>
             <Link
               href="/about"
-              className="bg-red-900 hidden lg:block hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold text-base transition-all duration-300 hover:-translate-y-1 mt-4 md:mt-0"
+              className="bg-red-900 hidden lg:flex hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold text-base transition-all duration-300 hover:-translate-y-1 mt-4 md:mt-0 items-center gap-2 group"
             >
               View more
+              <ArrowRight className="h-4 w-4 transform transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
 
@@ -96,12 +98,14 @@ const AboutSection = () => {
 
       <Link
         href="/about"
-        className="bg-red-900 lg:hidden block hover:bg-red-700 text-white px-6 py-3 w-48 text-center  mx-auto rounded-full font-semibold  transition-all duration-300 text-lg  hover:-translate-y-1 mt-4 lg:mt-8"
+        className="bg-red-900 lg:hidden flex hover:bg-red-700 text-white px-6 py-3 w-48 mx-auto rounded-full font-semibold transition-all duration-300 text-lg hover:-translate-y-1 mt-4 lg:mt-8 items-center justify-center gap-2 group"
       >
         View more
+        <ArrowRight className="h-5 w-5 transform transition-transform group-hover:translate-x-1" />
       </Link>
     </section>
   );
 };
 
 export default AboutSection;
+
