@@ -2,7 +2,7 @@ import React from 'react';
 
 const JoinEvent = () => {
   return (
-    <div className="relative bg-gradient-to-br from-black via-[#0d0d0d] to-black flex flex-col sm:flex-row items-center justify-between px-4 pb-8 sm:px-6 lg:px-12 sm:py-10 py-6 overflow-hidden">
+    <div className="relative bg-gradient-to-br from-black via-[#0d0d0d] to-black flex flex-col sm:flex-row items-center justify-between px-4 pb-8 sm:px-6 lg:px-12 xl:max-w-7xl mx-auto sm:py-10 py-6 overflow-hidden">
     
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-[#fa5935] rounded-full blur-3xl"></div>
