@@ -185,7 +185,7 @@ const Navbar = () => {
               className={`flex items-center px-3 py-2.5 mx-2 my-1 text-sm text-white rounded-lg ${NavbarStyles.hoverTransition}
                         ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-5 opacity-0'}
                         ${pathname === item.path 
-                           ? 'bg-gradient-to-r from-white/10 to-white/5 border-l-2 border-white' 
+                           ? 'bg-gradient-to-r from-white/10 to-white/5' 
                            : 'hover:bg-white/10'}`}
               style={{ transitionDelay: `${index * 50}ms` }}
               onClick={() => setIsMenuOpen(false)}
