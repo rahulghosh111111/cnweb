@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const OurNinjas = () => {
   const ninjas = [
@@ -49,7 +50,6 @@ const OurNinjas = () => {
               <div className="text-center mt-4 text-white uppercase">
                 <h3
                   className="text-2xl font-semibold tracking-wide mb-1"
-                  // style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
                 >
                   {ninja.name}
                 </h3>
@@ -57,6 +57,18 @@ const OurNinjas = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* Explore More Button */}
+        <div className="flex justify-center mt-14 ">
+          <button 
+            className="group flex cursor-pointer items-center gap-2 bg-[#d12c2c] hover:bg-[#e03a3a] text-white px-8 py-2 rounded-lg font-bold  tracking-wider transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Explore More
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
+              <ArrowRight size={24} />
+            </span>
+          </button>
         </div>
       </div>
     </section>
