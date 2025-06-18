@@ -7,23 +7,29 @@ import { motion } from "framer-motion";
 
 const faqs = [
 	{
-		question: "What is CodingNinjas KIIT ?",
+		question: "What is Coding Ninjas KIIT all about?",
 		answer:
-			"CodingNinjas is a 45-day coding marathon designed to challenge and enhance your coding skills. It's an opportunity to learn, grow, and showcase your programming abilities, with a supportive community and exciting opportunities to prove yourself.",
+			"Coding Ninjas KIIT is a student-run tech community aimed at helping students enhance their coding, problem-solving, and development skills through events, workshops, contests, and peer learning.",
 	},
 	{
-		question: "When and where will CodingNinjas be held?",
+		question: "Who can join the Coding Ninjas KIIT society?",
 		answer:
-			"CodingNinjas will be held online, so you can participate from anywhere. Dates will be announced soon.",
+			"Any student from KIIT University who is enthusiastic about coding, competitive programming, development, or tech in general can join the society—whether you're a beginner or experienced.",
 	},
 	{
-		question: "Who can participate?",
+		question: "Do I need to be good at coding to become a member?",
 		answer:
-			"Anyone with an interest in coding, whether beginner or expert, is welcome to join CodingNinjas!",
+			"Not at all! We welcome students at all skill levels. Our sessions and activities are designed to help beginners learn from scratch while also challenging more advanced coders.",
 	},
 	{
-		question: "How much does it cost to participate?",
-		answer: "Participation in CodingNinjas is completely free of cost.",
+		question: "What kind of activities does the society organize?",
+		answer:
+			"We regularly conduct coding contests, hackathons, development bootcamps, tech talks, mentorship sessions, and hands-on workshops covering a wide range of tech topics.",
+	},
+	{
+		question: "How can I stay updated about upcoming events and opportunities?",
+		answer:
+			"You can follow us on our social media channels and keep an eye on this website for regular updates. You can also join our WhatsApp or Discord community for direct notifications.",
 	},
 ];
 
