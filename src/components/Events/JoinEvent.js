@@ -2,22 +2,20 @@ import React from 'react';
 
 const JoinEvent = () => {
   return (
-    <div className="relative bg-gradient-to-br from-black via-[#0d0d0d] to-black min-h-[280px] flex flex-col sm:flex-row items-center justify-between px-6 sm:px-12 py-4 overflow-hidden">
-      
-      {/* Subtle background elements */}
+    <div className="relative bg-gradient-to-br from-black via-[#0d0d0d] to-black flex flex-col sm:flex-row items-center justify-between px-4 pb-8 sm:px-6 lg:px-12 sm:py-10 py-6 overflow-hidden">
+    
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-[#fa5935] rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-[#8d0e0e] rounded-full blur-2xl"></div>
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#FF8820] rounded-full blur-xl"></div>
       </div>
 
-      {/* Minimal geometric shapes */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-8 right-8 w-16 h-16 border-2 border-[#fa5935] rotate-45"></div>
         <div className="absolute bottom-8 left-8 w-12 h-12 bg-[#8d0e0e] transform rotate-12"></div>
       </div>
 
-      <div className="relative z-10 text-center sm:text-left text-white mb-8 sm:mb-0">
+      <div className="relative z-10 text-center sm:text-left text-white mb-4 sm:mb-0">
         <div className=" flex space-x-2 mb-4 items-center justify-center sm:justify-start">
           <h1 
             className="font-black text-4xl sm:text-5xl leading-tight tracking-tight transition-all duration-300"
@@ -38,16 +36,15 @@ const JoinEvent = () => {
             EVENTS
           </h1>
         </div>
-        <p className="text-[#bfbfbd] text-lg sm:text-xl max-w-md leading-relaxed">
+        <p className="text-[#bfbfbd] text-lg sm:text-xl max-w-lg sm:max-w-sm xl:max-w-4xl leading-relaxed">
           Be part of something extraordinary. Join innovators, creators, and dreamers.
         </p>
       </div>
 
       <div className="relative z-10 flex justify-center">
-        <button className="group relative px-8 py-4 sm:px-10 sm:py-4 bg-black hover:bg-[#0d0d0d] text-white rounded-full text-lg sm:text-xl font-semibold transition-all duration-300 hover:scale-105 border border-gray-800 hover:border-[#fa5935] shadow-lg hover:shadow-[#fa5935]/20">
+        <button className="group relative px-8 py-2 sm:px-6 lg:px-10 mt-2 lg:py-3 bg-white hover:bg-[#d4d1d1] text-black rounded-full text-lg sm:text-xl font-semibold transition-all duration-300 hover:scale-105 border border-gray-800 hover:border-[#fa5935] shadow-lg hover:shadow-[#fa5935]/20">
           <span className="relative z-10">
-            Get Started
-          </span>
+Register Now          </span>
           
           {/* Subtle arrow icon */}
           <svg 
