@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const NavbarStyles = {
   hoverTransition: 'transition-all duration-300 ease-in-out',
-  linkPadding: 'px-5 py-[1px]',
+  linkPadding: 'xl:px-5 px-4 py-[1px]',
 
   activeIndicator: `
     before:absolute before:inset-0 before:bg-white/5 before:rounded-md before:backdrop-blur-sm
@@ -93,20 +93,20 @@ const Navbar = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-7 xl:px-8">
         <div className="flex items-center justify-between h-16">
 
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group relative">
               <Image
-                src="/logoDark.png"
+                src="/logoLight.png"
                 alt="Logo"
                 width={100}
                 height={100}
-                className="h-8 w-auto filter group-hover:brightness-110 transition-all duration-300"
+                className="h-14 w-auto"
               />
 
-              <span className="absolute -inset-2 rounded-full border border-white/0 group-hover:border-white/20 transition-all duration-300 scale-90 group-hover:scale-100"></span>
+              {/* <span className="absolute -inset-2 rounded-full border border-white/0 group-hover:border-white/20 transition-all duration-300 scale-90 group-hover:scale-100"></span> */}
             </Link>
           </div>
           
@@ -133,7 +133,7 @@ const Navbar = () => {
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
-              {/* Hamburger icon animation */}
+
               <div className="relative w-8 h-8 flex justify-center items-center">
                 <span 
                   className={`absolute w-7 h-0.5 rounded-full ${NavbarStyles.hoverTransition} ${
