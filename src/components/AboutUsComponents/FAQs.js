@@ -3,7 +3,7 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
 	{
@@ -37,6 +37,37 @@ export default function FAQs() {
 	const [activeIndex, setActiveIndex] = useState(null);
 	const toggleIndex = (index) => {
 		setActiveIndex(activeIndex === index ? null : index);
+	};
+
+	const containerVariants = {
+		hidden: { height: 0, opacity: 0 },
+		visible: {
+			height: "auto",
+			opacity: 1,
+			transition: {
+				height: { duration: 0.3 },
+				opacity: { duration: 0.2 },
+			},
+		},
+		exit: {
+			height: 0,
+			opacity: 0,
+			transition: {
+				height: { duration: 0.3 },
+				opacity: { duration: 0.2 },
+			},
+		},
+	};
+
+	const contentVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				delay: 0.2, 
+				duration: 0.3,
+			},
+		},
 	};
 
 	return (
@@ -93,17 +124,24 @@ export default function FAQs() {
 									</motion.div>
 								</button>
 
-								{activeIndex === index && (
-									<motion.div
-										initial={{ opacity: 0, height: 0 }}
-										animate={{ opacity: 1, height: "auto" }}
-										exit={{ opacity: 0, height: 0 }}
-										transition={{ duration: 0.3 }}
-										className="px-5 pb-5 text-sm md:text-base text-gray-300"
-									>
-										{faq.answer}
-									</motion.div>
-								)}
+								<AnimatePresence>
+									{activeIndex === index && (
+										<motion.div
+											variants={containerVariants}
+											initial="hidden"
+											animate="visible"
+											exit="exit"
+											className="px-5 pb-5 overflow-hidden"
+										>
+											<motion.div
+												variants={contentVariants}
+												className="text-sm md:text-base text-gray-300"
+											>
+												{faq.answer}
+											</motion.div>
+										</motion.div>
+									)}
+								</AnimatePresence>
 							</motion.div>
 						))}
 					</motion.div>
