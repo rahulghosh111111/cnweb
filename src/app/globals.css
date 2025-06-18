@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Gang of Three';
-  src: url('/fonts/GangOfThree.woff2') format('woff2'),
-       url('/fonts/GangOfThree.ttf') format('truetype');
+  src: url('/GangOfThree.woff2') format('woff2'),
+       url('/GangOfThree.ttf') format('truetype');
   font-display: swap;
 }
 
