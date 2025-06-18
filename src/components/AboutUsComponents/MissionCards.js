@@ -43,7 +43,7 @@ export default function MissionCards() {
 					Our Mission
 				</motion.h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-6 xl:gap-12">
 					{missionCards.map((card, index) => (
 						<motion.div
 							key={index}
