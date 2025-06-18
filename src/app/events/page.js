@@ -104,7 +104,7 @@ export default function EventsPage() {
         </div>
 
         {/* Slideshow Section */}
-        <section className="relative w-full h-[90vh] flex flex-col  items-center justify-center ">
+        <section className="relative w-full h-[90vh] sm:h-[650px] flex flex-col  items-center justify-center ">
           <EventComponent
             {...events[currentEvent]}
             mobileBgImage={events[currentEvent].mobileBgImage}
