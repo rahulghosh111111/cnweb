@@ -112,7 +112,7 @@ const Navbar = () => {
           
           {/* Desktop Menu with improved active state */}
           <div className="hidden md:block">
-            <div className=" flex items-center space-x-8">
+            <div className=" flex items-center sm:space-x-1 lg:space-x-8">
               {navItems.map((item) => (
                 <NavItem
                   key={item.name}
