@@ -54,8 +54,6 @@ const EventComponent = ({
               {registrationInfo}
             </a>
           </div>
-
-          {/* Comment out or remove the event photos section as it appears to be commented out already */}
         </div>
 
         {/* Slider Navigator - Positioned at bottom */}
