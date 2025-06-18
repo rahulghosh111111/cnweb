@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
 
-  title: "About Us | CNKIIT",
+  title: "About Us",
   description: "Coding Ninjas: KIIT Chapter is a vibrant community of tech enthusiasts dedicated to enhancing programming skills, fostering collaboration, and contributing to open source projects. Join us to learn, innovate, and grow together.",
   keywords: "Coding Ninjas, KIIT, Chapter, Programming, Community , Events, Learning ,  Open Source",
   authors: [{ name: "Coding Ninjas KIIT Chapter" }], 
