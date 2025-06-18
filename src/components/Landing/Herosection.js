@@ -22,7 +22,7 @@ const Herosection = () => {
       <div className="relative z-20 flex flex-col items-center justify-between pt-40 h-full container mx-auto px-4 text-center">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mt-20 animate-slide-down">
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#E63946] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-wider"
+            className="text-6xl md:text-7xl lg:text-8xl font-bold text-[#E63946] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-wider"
             style={{
               textShadow:
                 "2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000",
@@ -32,7 +32,7 @@ const Herosection = () => {
             CODING
           </h1>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#E63946] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-wider"
+            className="text-6xl md:text-7xl lg:text-8xl font-bold text-[#E63946] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] tracking-wider"
             style={{
               textShadow:
                 "2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000",
