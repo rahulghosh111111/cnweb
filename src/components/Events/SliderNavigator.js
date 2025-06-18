@@ -16,7 +16,7 @@ export default function SliderNavigator({ total, current, setCurrent }) {
       <div
         ref={sliderRef}
         onClick={handleClick}
-        className="relative w-full max-w-[90%] sm:max-w-[500px] h-8 sm:h-10 mt-16 mb-4 cursor-pointer"
+        className="relative w-full max-w-[90%] sm:max-w-[500px] h-8 sm:h-10 mt-14 mb-4 cursor-pointer"
       >
         {/* Track */}
         <div className="absolute top-1/2 left-0 w-full h-1 bg-black/60 rounded-full transform -translate-y-1/2 z-0" />
