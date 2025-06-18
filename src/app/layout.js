@@ -2,51 +2,127 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Menubars/Footer";
 import Navbar from "@/components/Menubars/Navbar";
+import Script from "next/script";
 
-
+// Optimize font loading with display swap
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
+// Enhanced metadata for better SEO
 export const metadata = {
-
-  title: "Coding Ninjas: KIIT Chapter",
-  description: "Coding Ninjas: KIIT Chapter is a vibrant community of tech enthusiasts dedicated to enhancing programming skills, fostering collaboration, and contributing to open source projects. Join us to learn, innovate, and grow together.",
-  keywords: "Coding Ninjas, KIIT, Chapter, Programming, Community , Events, Learning ,  Open Source",
-  authors: [{ name: "Coding Ninjas KIIT Chapter" }], 
-  description: "Join the Coding Ninjas KIIT Chapter to enhance your programming skills, participate in events, and contribute to open source projects. Connect with like-minded individuals and grow your knowledge in a collaborative environment.",
+  metadataBase: new URL("https://www.cnkiit.in"),
+  title: {
+    default: "Coding Ninjas: KIIT Chapter",
+    template: "%s | Coding Ninjas KIIT Chapter",
+  },
+  description:
+    "Join the Coding Ninjas KIIT Chapter to enhance your programming skills, participate in events, and contribute to open source projects. Connect with like-minded individuals and grow your knowledge in a collaborative environment.",
+  keywords: [
+    "Coding Ninjas",
+    "KIIT",
+    "Programming Community",
+    "Tech Events",
+    "Coding Workshops",
+    "Open Source Projects",
+    "Student Developers",
+    "Programming Skills",
+    "Tech Learning",
+  ],
+  authors: [{ name: "Coding Ninjas KIIT Chapter" }],
+  creator: "Coding Ninjas KIIT Chapter",
+  publisher: "Coding Ninjas KIIT Chapter",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://www.cnkiit.in",
+  },
   openGraph: {
-    title: "Coding Ninjas: KIIT Chapter",
-    description: "Join the Coding Ninjas KIIT Chapter to enhance your programming skills, participate in events, and contribute to open source projects. Connect with like-minded individuals and grow your knowledge in a collaborative environment.",
-    url: "https://cnkiit.in",
+    type: "website",
+    locale: "en_US",
+    url: "https://www.cnkiit.in",
     siteName: "Coding Ninjas: KIIT Chapter",
+    title: "Coding Ninjas: KIIT Chapter",
+    description:
+      "Join the Coding Ninjas KIIT Chapter to enhance your programming skills, participate in events, and contribute to open source projects.",
     images: [
       {
-        url: "https://cnkiit.in/logo.png",
+        url: "https://www.cnkiit.in/logo.png",
         width: 800,
         height: 600,
         alt: "Coding Ninjas: KIIT Chapter Logo",
       },
     ],
   },
-
+  twitter: {
+    card: "summary_large_image",
+    title: "Coding Ninjas: KIIT Chapter",
+    description:
+      "Join the Coding Ninjas KIIT Chapter to enhance your programming skills and participate in tech events.",
+    images: ["https://www.cnkiit.in/logo.png"],
+  },
+  verification: {
+    // Add verification tokens if available
+    // google: "google-site-verification-token",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
+      <head>
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className="antialiased flex flex-col min-h-screen">
+        {/* Skip to content accessibility link */}
+        <a href="#main-content" className="sr-only focus:not-sr-only">
+          Skip to content
+        </a>
         <Navbar />
-        {children}
-        <Footer/>
+        <main id="main-content" className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+
+        {/* Structured data for organization */}
+        <Script id="organization-schema" type="application/ld+json">
+          {`{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Coding Ninjas: KIIT Chapter",
+              "url": "https://www.cnkiit.in",
+              "logo": "https://www.cnkiit.in/logo.png",
+              "sameAs": [
+                "https://twitter.com/CodingNinjasKIIT",
+                "https://www.instagram.com/codingninjas_kiit/",
+                "https://github.com/CodingNinjasKIIT"
+              ]
+            }`}
+        </Script>
       </body>
     </html>
   );
