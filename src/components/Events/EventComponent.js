@@ -37,10 +37,10 @@ const EventComponent = ({
       }}
     >
       {/* Hero Content */}
-      <div className="w-full max-w- mx-auto text-white flex flex-col items-center justify-between px-4 py-6 md:py-16 relative min-h-[85vh]">
+      <div className="w-full max-w- mx-auto text-white flex flex-col items-center justify-between px-4 py-6 sm:mt-10  relative min-h-[85vh] sm:h-[300px]">
         <div className="flex flex-col md:flex-row items-center justify-center w-full flex-1">
-          <div className="flex flex-col items-center md:items-start justify-center my-auto md:mt-24 lg:mt-32">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start justify-center my-auto ">
+            <h1 className="text-4xl lg:text-[42px] font-bold mb-4 text-center md:text-left">
               {title}
             </h1>
             <p className="text-lg xl:text-xl mb-8 max-w-xl text-center md:text-left">
@@ -57,7 +57,7 @@ const EventComponent = ({
         </div>
 
         {/* Slider Navigator - Positioned at bottom */}
-        <div className="w-full flex justify-center mt-8 md:mt-16 mb-4 md:mb-0">
+        <div className="w-full flex justify-center mt-8 mb-4 md:mb-0">
           <SliderNavigator
             total={totalEvents}
             current={positionIndex}
