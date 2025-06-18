@@ -60,7 +60,7 @@ const domains = [
 const AboutUs = () => {
 	return (
 		<div className="relative w-full h-screen bg-black overflow-hidden flex flex-col justify-center items-center pt-20">
-			{/* Background effects */}
+
 			<div className="absolute inset-0 w-full h-full">
 				<SparklesCore
 					id="sparkles-effect"
