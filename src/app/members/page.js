@@ -1,6 +1,5 @@
 'use client';
 
-import DomainScroll from '@/components/Members/DomainScroll';
 import HeroSection from '@/components/membersUpdated/HeroSection';
 import MemberScroll from '@/components/membersUpdated/MemberScroll';
 import React,{useState, useRef} from 'react';
