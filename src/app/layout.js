@@ -92,11 +92,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased flex flex-col min-h-screen">
-        <a href="#main-content" className="sr-only focus:not-sr-only">
-          Skip to content
-        </a>
         <Navbar />
-        <main id="main-content" className="flex-grow">
+        <main >
           {children}
         </main>
         <Footer />
