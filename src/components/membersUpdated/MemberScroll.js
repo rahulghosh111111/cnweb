@@ -1,193 +1,10 @@
 import React, { useState, useRef } from 'react';
-import { ChevronDown, Users, Crown, Code, Bot, Smartphone, Shield, Instagram, Linkedin, Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronDown, Users, Crown, ChevronLeft, ChevronRight, Instagram, Linkedin, Github } from 'lucide-react';
+import domainsData from '../data/memberData';
 
 const MemberScroll = () => {
   const [expandedDomains, setExpandedDomains] = useState({});
   const scrollRefs = useRef({});
-
-  const domainsData = {
-    'AI / Machine Learning': {
-      icon: Bot,
-      color: 'from-[#fa5935] to-[#FF8820]',
-      lead: {
-        name: 'Alex Kumar',
-        role: 'LEAD',
-        image: '#',
-        social: {
-          instagram: '#',
-          linkedin: '#',
-          github: '#'
-        }
-      },
-      members: [
-        {
-          name: 'Samantha Chen',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Raj Patel',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Maya Singh',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'David Wang',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        }
-      ]
-    },
-    'Web Development': {
-      icon: Code,
-      color: 'from-[#8d0e0e] to-[#fa5935]',
-      lead: {
-        name: 'John Doe',
-        role: 'LEAD',
-        image: '#',
-        social: {
-          instagram: '#',
-          linkedin: '#',
-          github: '#'
-        }
-      },
-      members: [
-        {
-          name: 'Alice Smith',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Bob Johnson',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Carol Wilson',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'David Brown',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        }
-      ]
-    },
-    'Mobile Development': {
-      icon: Smartphone,
-      color: 'from-[#FF8820] to-[#8d0e0e]',
-      lead: {
-        name: 'Alex Kumar',
-        role: 'LEAD',
-        image: '#',
-        social: {
-          instagram: '#',
-          linkedin: '#',
-          github: '#'
-        }
-      },
-      members: [
-        {
-          name: 'Lisa Zhang',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Tom Rodriguez',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Nina Patel',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        }
-      ]
-    },
-    'Cybersecurity': {
-      icon: Shield,
-      color: 'from-[#fa5935] to-[#8d0e0e]',
-      lead: {
-        name: 'Robert Kim',
-        role: 'LEAD',
-        image: '#',
-        social: {
-          instagram: '#',
-          linkedin: '#',
-          github: '#'
-        }
-      },
-      members: [
-        {
-          name: 'Grace Liu',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        },
-        {
-          name: 'Mark Taylor',
-          image: '#',
-          social: {
-            instagram: '#',
-            linkedin: '#',
-            github: '#'
-          }
-        }
-      ]
-    }
-  };
 
   const scrollLeft = (domainName) => {
     const container = scrollRefs.current[domainName];
@@ -308,21 +125,6 @@ const MemberScroll = () => {
                       {/* Mobile Layout - All Cards Slide */}
                       <div className="sm:hidden px-3">
                         <div className="relative">
-
-                          {/* <button
-                            onClick={() => scrollLeft(domainName)}
-                            className="absolute hidden sm:block left-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
-                          >
-                            <ChevronLeft className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
-                          </button>
-                          
-                          <button
-                            onClick={() => scrollRight(domainName)}
-                            className="absolute hidden sm:block right-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
-                          >
-                            <ChevronRight className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
-                          </button> */}
-
                           <div className="overflow-hidden ">
                             <div
                               ref={(el) => (scrollRefs.current[domainName] = el)}
@@ -411,5 +213,21 @@ const MemberScroll = () => {
     </div>
   );
 };
+
+// export default MemberScroll;
+//       {/* Custom Styles */}
+//       <style jsx global>{`
+//         .scrollbar-hide {
+//           -ms-overflow-style: none;
+//           scrollbar-width: none;
+//         }
+//         .scrollbar-hide::-webkit-scrollbar {
+//           display: none;
+//         }
+//       `}</style>
+//     </div>
+//   );
+
+
 
 export default MemberScroll;
