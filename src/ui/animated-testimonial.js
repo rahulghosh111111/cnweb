@@ -34,8 +34,19 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+    <div className="mx-auto max-w-sm px-4 pb-20 py-16 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+     <motion.h2
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="text-5xl sm:text-6xl md:text-7xl font-bold mb-20 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#fa5935] to-[#FF8820]"
+              style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}
+            >
+              MEET OUR ALUMNI
+            </motion.h2>
+    
+      <div className="relative grid grid-cols-1 py-10 gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -103,7 +114,7 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-2xl font-bold text-[#fa5935]">
               {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
