@@ -308,7 +308,7 @@ const MemberScroll = () => {
                       {/* Mobile Layout - All Cards Slide */}
                       <div className="sm:hidden px-3">
                         <div className="relative">
-                          {/* Navigation Buttons for Mobile */}
+
                           {/* <button
                             onClick={() => scrollLeft(domainName)}
                             className="absolute hidden sm:block left-2 top-1/2 transform -translate-y-1/2 z-40 p-2 bg-[#1c1919]/95 backdrop-blur-2xl rounded-full border border-gray-600/70 hover:bg-[#fa5935]/20 hover:border-[#fa5935]/70 transition-all duration-300 group shadow-2xl"
@@ -323,10 +323,9 @@ const MemberScroll = () => {
                             <ChevronRight className="w-4 h-4 text-white group-hover:text-[#fa5935] transition-colors duration-300" />
                           </button> */}
 
-                          {/* All Cards Scrollable Container for Mobile */}
                           <div className="overflow-hidden ">
-                            <div 
-                              ref={(el) => scrollRefs.current[domainName] = el}
+                            <div
+                              ref={(el) => (scrollRefs.current[domainName] = el)}
                               className="flex space-x-4 overflow-x-auto scrollbar-hide py-4"
                               style={{
                                 scrollbarWidth: 'none',
