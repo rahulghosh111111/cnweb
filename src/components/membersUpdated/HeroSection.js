@@ -10,7 +10,7 @@ export default function HeroSection ()  {
             alt="missing"
             width={1200}
             height={1200}
-            className ="h-[80vh] object-cover bg-center w-full [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]"
+            className ="h-[70vh] object-cover bg-center w-full [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]"
             priority
             />
 
@@ -19,7 +19,8 @@ export default function HeroSection ()  {
                 style={{ fontFamily: "'Gang of Three', Arial, sans-serif" }}>
               Our Ninjas
             </h1>
-                <h2 className="text-lg font-normal pb-4 sm:px-10 px-5 text-[rgba(255,255,255,0.43)]">Meet the most talented, creative, and fun-loving team</h2>
+                <h2 className="text-lg font-normal pb-4 sm:px-10 px-5 text-[rgba(255,255,255,0.43)]">
+                  Meet the most talented, creative, and fun-loving team. We are a group of creative minds who are passionate about what they do. </h2>
                 {/* <p className="text-xl font-semibold py-9 text-[rgba(239,251,251,0.8)]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iu
 </p> */}
             </div>
