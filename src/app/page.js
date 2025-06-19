@@ -5,6 +5,7 @@ import OurEvents from "@/components/Landing/OurEvents";
 import Alumini from "@/components/Landing/Alumini";
 import JoinTeam from "@/components/Landing/JoinTeam";
 import AboutSection from "@/components/Landing/AboutSection";
+import AnimatedTestimonialsDemo from "@/components/Landing/new-testimonial";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
       <OurNinjas />
       <OurEvents />
       {/* <ProjectsSection/> */}
-      <Alumini/>
+      {/* <Alumini/> */}
+      <AnimatedTestimonialsDemo />
       <JoinTeam/>
     </div>
   );
