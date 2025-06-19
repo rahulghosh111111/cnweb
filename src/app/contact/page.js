@@ -90,11 +90,12 @@ export default function ContactPage() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#fa5935] to-[#FF8820] rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-1000"></div>
                 <div className="relative bg-[#1a1616] p-4 rounded-3xl">
-                  <Image
-                    src="/Rectangle 8.png"
-                    alt="Team collaboration"
-                    width={600}
-                    height={400}
+                                <Image
+                                  src="/AboutNinjas.png"
+                                  alt="Coding Ninjas"
+                                  width={500}
+                                  height={350}
+                                
                     className="w-full h-64 sm:h-80 object-cover rounded-2xl"
                   />
                 </div>
