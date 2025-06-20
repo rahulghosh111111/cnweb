@@ -97,7 +97,6 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
-
         <Script id="organization-schema" type="application/ld+json">
           {`{
               "@context": "https://schema.org",
