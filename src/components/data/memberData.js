@@ -66,9 +66,9 @@ const domainsData = {
     icon: Bot,
     color: 'from-[#fa5935] to-[#FF8820]',
     lead: {
-      name: 'Alex Kumar',
+      name: 'Keshav dudani',
       role: 'LEAD',
-      image: '#',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
@@ -154,9 +154,9 @@ const domainsData = {
     icon: Smartphone,
     color: 'from-[#FF8820] to-[#8d0e0e]',
     lead: {
-      name: 'Alex Kumar',
+      name: 'Kartavya',
       role: 'LEAD',
-      image: '#',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
@@ -362,9 +362,9 @@ const domainsData = {
     icon: Smartphone,
     color: 'from-[#FF8820] to-[#8d0e0e]',
     lead: {
-      name: 'Cloud Lead Name',
+      name: 'Ankush saini',
       role: 'LEAD',
-      image: '',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
@@ -398,7 +398,7 @@ const domainsData = {
     lead: {
       name: 'Marketing Lead Name',
       role: 'LEAD',
-      image: '',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
@@ -448,9 +448,9 @@ const domainsData = {
     icon: Smartphone,
     color: 'from-[#FF8820] to-[#8d0e0e]',
     lead: {
-      name: 'Example Junior',
+      name: 'Shubham Agarwal',
       role: 'LEAD',
-      image: '',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
@@ -482,9 +482,9 @@ const domainsData = {
     icon: Smartphone,
     color: 'from-[#FF8820] to-[#8d0e0e]',
     lead: {
-      name: 'Example Content',
+      name: 'Arghajit',
       role: 'LEAD',
-      image: '',
+      image: '/demo.png',
       social: {
         instagram: '#',
         linkedin: '#',
