@@ -29,8 +29,17 @@ const domainsData = {
         image: '/WEB_Eshita_Kapat.jpeg',
         social: {
           instagram: '#',
-          linkedin: 'www.linkedin.com/in/eshita-kapat',
+          linkedin: 'https://www.linkedin.com/in/eshita-kapat',
           github: 'https://github.com/eshitakapat'
+        }
+      },
+      {
+        name: 'Kaushik Verma',
+        image: '/WEB_Kaushik_Verma.jpg',
+        social: {
+          instagram: '#',
+          linkedin: 'https://www.linkedin.com/in/kaushik-verma-2b5515254/',
+          github: 'https://github.com/kaushik-2318/'
         }
       },
       {
