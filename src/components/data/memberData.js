@@ -396,7 +396,7 @@ const domainsData = {
     icon: Smartphone,
     color: 'from-[#FF8820] to-[#8d0e0e]',
     lead: {
-      name: 'Marketing Lead Name',
+      name: 'Ary Bhatia',
       role: 'LEAD',
       image: '/demo.png',
       social: {
