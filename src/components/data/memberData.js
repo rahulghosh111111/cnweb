@@ -25,7 +25,7 @@ const domainsData = {
         },
       },
       {
-        name: "Ayush",
+        name: "Aayush",
         image: "/WEB_Ayush.jpg",
         social: {
           instagram: "https://www.instagram.com/ayush_._kumar_/",
