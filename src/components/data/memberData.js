@@ -24,15 +24,17 @@ const domainsData = {
           github: 'https://github.com/Soumyadipmaity1'
         }
       },
-      {
-        name: 'Archi Shaw',
-        image: '/WEB_Archi_Shaw.jpg',
+            {
+        name: 'Sanskar Singh',
+        image: '/WEB_Sanskar_Singh.jpeg',
         social: {
-          instagram: '#',
-          linkedin: 'https://www.linkedin.com/in/archi-shaw-279a34277',
-          github: '#'
+          instagram: 'https://www.instagram.com/mesanskarsingh/',
+          linkedin: 'https://www.linkedin.com/in/mesanskarsingh/',
+          github: 'https://github.com/MeSanskarSingh'
         }
+
       },
+ 
       {
         name: 'Eshita Kapat',
         image: '/WEB_Eshita_Kapat.jpeg',
@@ -60,15 +62,16 @@ const domainsData = {
           github: '#'
         }
       },
-      {
-        name: 'Sanskar Singh',
-        image: '/WEB_Sanskar_Singh.jpeg',
+
+           {
+        name: 'Archi Shaw',
+        image: '/WEB_Archi_Shaw.jpg',
         social: {
-          instagram: 'https://www.instagram.com/mesanskarsingh/',
-          linkedin: 'https://www.linkedin.com/in/mesanskarsingh/',
-          github: 'https://github.com/MeSanskarSingh'
+          instagram: '#',
+          linkedin: 'https://www.linkedin.com/in/archi-shaw-279a34277',
+          github: '#'
         }
-      }
+      },
     ]
   },
   'AI / Machine Learning': {
