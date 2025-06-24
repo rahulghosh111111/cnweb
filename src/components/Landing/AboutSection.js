@@ -1,9 +1,35 @@
-import React from "react";
+"use client"
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
+const sliderImages = [
+  {
+    src: "/slide1.jpg",
+    alt: "Team of developers collaborating 1",
+  },
+  {
+    src: "/slide2.jpg",
+    alt: "Team of developers collaborating 2",
+  },
+  {
+    src: "/slide3.jpg",
+    alt: "Team of developers collaborating 3",
+  },
+];
+
 const AboutSection = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === sliderImages.length - 1 ? 0 : prev + 1));
+    }, 3000); // 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       className="relative py-16 text-white overflow-hidden"
@@ -82,14 +108,25 @@ const AboutSection = () => {
             </div>
 
             <div className="flex-1">
-              <div className="rounded-xl overflow-hidden shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+              <div className="relative rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 w-full max-w-[500px] mx-auto">
                 <Image
                   width={500}
                   height={500}
-                  src="/AboutLanding1.png"
-                  alt="Team of developers collaborating"
-                  className="lg:h-80 h-72 block rounded-xl"
+                  src={sliderImages[current].src}
+                  alt={sliderImages[current].alt}
+                  className="lg:h-80 h-72 w-full object-cover block rounded-xl transition-all duration-300"
+                  priority
                 />
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+                  {sliderImages.map((_, idx) => (
+                    <span
+                      key={idx}
+                      className={`block w-2 h-2 rounded-full ${
+                        idx === current ? "bg-white" : "bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
