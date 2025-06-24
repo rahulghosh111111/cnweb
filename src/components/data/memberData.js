@@ -44,15 +44,7 @@ const domainsData = {
           github: 'https://github.com/eshitakapat'
         }
       },
-      {
-        name: 'Kaushik Verma',
-        image: '/WEB_Kaushik_Verma.jpg',
-        social: {
-          instagram: '#',
-          linkedin: 'https://www.linkedin.com/in/kaushik-verma-2b5515254/',
-          github: 'https://github.com/kaushik-2318/'
-        }
-      },
+      
       {
         name: 'Rahul Ghosh',
         image: '/WEB_Rahul_Ghosh.jpg',
@@ -60,6 +52,15 @@ const domainsData = {
           instagram: 'https://www.instagram.com/gili_gili_6u',
           linkedin: 'https://www.linkedin.com/in/rahul-ghosh-b0b660254',
           github: '#'
+        }
+      },
+      {
+        name: 'Kaushik Verma',
+        image: '/WEB_Kaushik_Verma.jpg',
+        social: {
+          instagram: '#',
+          linkedin: 'https://www.linkedin.com/in/kaushik-verma-2b5515254/',
+          github: 'https://github.com/kaushik-2318/'
         }
       },
 
