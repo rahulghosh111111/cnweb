@@ -16,6 +16,15 @@ const domainsData = {
     },
     members: [
       {
+        name: 'Soumyadip Maity',
+        image: '/WEB_Soumyadip.jpg',
+        social: {
+          instagram: 'https://www.instagram.com/smilingsoumya1/',
+          linkedin: 'https://www.linkedin.com/in/soumyadip-maity-a77b41282/',
+          github: 'https://github.com/Soumyadipmaity1'
+        }
+      },
+      {
         name: 'Archi Shaw',
         image: '/WEB_Archi_Shaw.jpg',
         social: {
