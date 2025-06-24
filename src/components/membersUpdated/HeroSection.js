@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section className="h-screen flex">
       <div className="w-full mx-auto rounded-xl overflow-hidden ">
         <Image
-          src="/OurNinjasLanding.png"
+          src="/memberHero.jpg"
           alt="missing"
           width={1200}
           height={1200}
