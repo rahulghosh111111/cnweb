@@ -28,9 +28,9 @@ const domainsData = {
         name: "Aayush",
         image: "/WEB_Ayush.jpg",
         social: {
-          instagram: "https://www.instagram.com/ayush_._kumar_/",
-          linkedin: "https://www.linkedin.com/in/ayush-kumar-0a1b2a1b5/",
-          github: "https://github.com/ayush-kumar-0a1b2a1b5",
+          instagram: "https://www.instagram.com/ig._aayush/",
+          linkedin: "https://www.linkedin.com/in/aayushj19",
+          github: "https://github.com/aayushj19/",
         },
       },
       {
