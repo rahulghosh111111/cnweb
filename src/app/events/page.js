@@ -13,15 +13,15 @@ export default function EventsPage() {
   // Comprehensive array containing all card data
   const allCardData = [
     {
-      title: "Main Event 2023",
+      title: "Our Team",
       slug: "main-event",
-      bgImage: events[0].bgImage,
+      bgImage: "/event1.jpg",
       date: "September 20, 2023",
       description: "Our flagship annual tech conference",
       isMainHero: true,
     },
     {
-      title: "Secondary Exhibition",
+      title: "Badlav",
       slug: "secondary-exhibition",
       bgImage: events[1].bgImage,
       date: "October 5, 2023",
@@ -29,23 +29,23 @@ export default function EventsPage() {
       isSecondaryHero: true,
     },
     {
-      title: "Tech Conference 2023",
+      title: "Events Glimpse",
       slug: "tech-conference",
-      bgImage: "/images/events/event1.jpg",
+      bgImage: "/event3.jpg",
       date: "October 15, 2023",
       description: "Join us for the biggest tech event",
     },
     {
-      title: "Hackathon Challenge",
+      title: "Events Glimpse",
       slug: "hackathon",
-      bgImage: "/images/events/event2.jpg",
+      bgImage: "/event4.jpg",
       date: "November 5, 2023",
       description: "24-hour coding competition",
     },
     {
-      title: "Web Development Workshop",
+      title: "Events Glimpse",
       slug: "webdev-workshop",
-      bgImage: "/images/events/event3.jpg",
+      bgImage: "/event5.jpg",
       date: "September 25, 2023",
       description: "Learn modern web development techniques",
     },
