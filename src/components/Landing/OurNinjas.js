@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const OurNinjas = () => {
   const ninjas = [
-    { id: 1, name: "NAME", position: "POSITION", image: "/sampleMember.png" },
-    { id: 2, name: "NAME", position: "POSITION", image: "/sampleMember.png" },
-    { id: 3, name: "NAME", position: "POSITION", image: "/sampleMember.png" },
+    { id: 1, name: "Chittaranjan Pradhan", position: "Faculty Coordinator", image: "/chittaranjan.png" },
+    { id: 2, name: "Ayush Srivastava", position: "President", image: "/ayush_shrivastava.png" },
+    { id: 3, name: "Rahul Lenka", position: "Vice President", image: "/rahul_lenka.png" },
   ];
 
   return (
@@ -48,13 +48,13 @@ const OurNinjas = () => {
                 />
               </div>
 
-              <div className="text-center mt-4 text-white uppercase">
+              <div className="text-center mt-4 text-white ">
                 <h3
-                  className="text-2xl font-semibold tracking-wide mb-1"
+                  className="text-xl font-semibold tracking-wide mb-1"
                 >
                   {ninja.name}
                 </h3>
-                <p className="text-gray-300 tracking-wide">{ninja.position}</p>
+                <p className="text-gray-300 uppercase text-sm tracking-wide">{ninja.position}</p>
               </div>
             </div>
           ))}
