@@ -3,8 +3,8 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="h-screen flex">
-      <div className="w-full mx-auto rounded-xl overflow-hidden ">
+    <section className="h-screen flex relative">
+      <div className="w-full mx-auto rounded-xl overflow-hidden relative">
         <Image
           src="/memberHero.jpg"
           alt="missing"
@@ -13,6 +13,9 @@ export default function HeroSection() {
           className="h-[70vh] object-cover bg-center w-full [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)]"
           priority
         />
+        
+        {/* Black Transparent Overlay - Top to Middle */}
+        <div className="absolute top-0 left-0 right-0 h-[35vh] bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
 
         <div className="">
           <h1
