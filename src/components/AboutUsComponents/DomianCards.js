@@ -78,7 +78,7 @@ const DomainCard = ({ domain }) => {
           
           {/* Technologies section */}
           {domain.technologies && (
-            <div className="mb-5">
+            <div className="">
              
               <div className="flex flex-wrap gap-2">
                 {domain.technologies.map((tech, index) => (
@@ -93,26 +93,7 @@ const DomainCard = ({ domain }) => {
                 ))}
               </div>
             </div>
-          )}
-          
-          {/* Apply now button with simple hash link */}
-          <div className="mt-auto pt-1">
-            <Link 
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-300 dark:text-white 
-                        transition-colors duration-300 group-hover:text-[#fa5935] dark:group-hover:text-[#fa5935] 
-                        relative">
-              <span className='text-base'>Apply now</span>
-              <div className={`ml-2 p-1 rounded-full ${domain.colors.btnBg} ${domain.colors.btnBgHover}
-                             transition-all duration-300 transform group-hover:translate-x-1 group-hover:-translate-y-0.5`}>
-                <ArrowUpRight className={`w-3.5 h-3.5 ${domain.colors.btnIcon}`} />
-              </div>
-              
-              {/* Fixed animated underline */}
-              <span className={`absolute bottom-0 left-0 w-0 h-0.5 ${domain.colors.underline}
-                             group-hover:w-full transition-all duration-300 ease-in-out`}></span>
-            </Link>
-          </div>
+          )}          
         </div>
       </div>
     </div>
