@@ -20,7 +20,7 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { title: "Email", value: "", icon: <Mail size={16} /> },
+    { title: "Email", value: "queries.codingninjaskiitchapter@gmail.com", icon: <Mail size={16} /> },
     { title: "KIIT UNIVERSITY", value: "", icon: <MapPin size={16} /> },
     { title: "BHUBANESHWAR - 751024", value: "" },
     { title: "ODISHA, INDIA", value: "" },
