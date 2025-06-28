@@ -5,10 +5,8 @@ import Link from "next/link";
 
 const OurNinjas = () => {
   const ninjas = [
-    { id: 1, name: "Chittaranjan Pradhan", position: "Faculty Coordinator", image: "/chittaranjan.png" },
-    { id: 2, name: "Ayush Srivastava", position: "President", image: "/ayush_shrivastava.png" },
-    { id: 3, name: "Rahul Lenka", position: "Vice President", image: "/rahul_lenka.png" },
-  ];
+    { id: 1, name: "Dr. nChittaranjan Pradhan", position: "Faculty Coordinator", image: "/chittaranjan.png" },
+      ];
 
   return (
     <section
@@ -36,9 +34,9 @@ const OurNinjas = () => {
           {ninjas.map((ninja) => (
             <div
               key={ninja.id}
-              className="w-full sm:w-[200px] lg:w-[300px] transition-transform duration-300 hover:-translate-y-2"
+              className="w-full sm:w-[200px] lg:w-[300px] transition-transform duration-300 hover:-translate-y-2 group"
             >
-              <div className="w-full lg:h-80 h-60 overflow-hidden rounded-lg filter grayscale shadow-lg">
+              <div className="w-full lg:h-80 h-60 overflow-hidden rounded-lg filter grayscale group-hover:grayscale-0 shadow-lg transition-all duration-300">
                 <Image
                   width={300}
                   height={300}
