@@ -1,5 +1,31 @@
 import { Bot, Code, Smartphone, Shield } from "lucide-react";
 
+// Leadership data
+export const leadershipData = [
+  { 
+    id: 2, 
+    name: "Ayush Srivastava", 
+    position: "President", 
+    image: "/ayush_shrivastava.png",
+    social: {
+      instagram: "#",
+      linkedin: "#",
+      github: "#",
+    }
+  },
+  { 
+    id: 3, 
+    name: "Rahul Lenka", 
+    position: "Vice President", 
+    image: "/rahul_lenka.png",
+    social: {
+      instagram: "#",
+      linkedin: "#",
+      github: "#",
+    }
+  },
+];
+
 const domainsData = {
   "Web Development": {
     icon: Code,
