@@ -1,19 +1,13 @@
 "use client"
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const OurNinjas = () => {
-  const [activeCard, setActiveCard] = useState(null);
-  
   const ninjas = [
     { id: 1, name: "Dr. Chittaranjan Pradhan", position: "Faculty Coordinator", image: "/chittaranjan.png" },
-  ];
-
-  const handleCardInteraction = (id) => {
-    setActiveCard(activeCard === id ? null : id);
-  };
+      ];
 
   return (
     <section
@@ -41,36 +35,15 @@ const OurNinjas = () => {
           {ninjas.map((ninja) => (
             <div
               key={ninja.id}
-              className={`ninja-card w-[300px] md:w-[200px] lg:w-[300px] transition-transform duration-300 cursor-pointer group ${
-                activeCard === ninja.id 
-                  ? 'transform -translate-y-2 mobile-card-active' 
-                  : 'hover:-translate-y-2'
-              }`}
-              onClick={() => handleCardInteraction(ninja.id)}
-              onTouchStart={() => handleCardInteraction(ninja.id)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  handleCardInteraction(ninja.id);
-                }
-              }}
+              className="w-[200px] lg:w-[300px] transition-transform duration-300 hover:-translate-y-2 group"
             >
-              <div className={`w-full lg:h-80 h-60 overflow-hidden rounded-lg shadow-lg transition-all duration-300 ${
-                activeCard === ninja.id 
-                  ? 'filter-none' 
-                  : 'filter grayscale group-hover:grayscale-0'
-              }`}>
+              <div className="w-full lg:h-80 h-60 overflow-hidden rounded-lg filter grayscale group-hover:grayscale-0 shadow-lg transition-all duration-300">
                 <Image
                   width={300}
                   height={300}
                   src={ninja.image}
                   alt={`${ninja.name} - ${ninja.position}`}
-                  className={`w-full h-full object-cover transition-transform duration-300 ${
-                    activeCard === ninja.id 
-                      ? 'scale-105' 
-                      : 'group-hover:scale-105'
-                  }`}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
