@@ -28,7 +28,7 @@ const OurNinjas = () => {
             {/* <span className="inline-block transform -translate-y-1 text-[#d12c2c]">
               
             </span> */}
-            S
+            
           </span>
         </h2>
 
