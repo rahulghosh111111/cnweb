@@ -24,10 +24,10 @@ const OurNinjas = () => {
         >
           <span className="text-white">OUR </span>
           <span className="text-[#d12c2c]">
-            NINJ
-            <span className="inline-block transform -translate-y-1 text-[#d12c2c]">
-              ★
-            </span>
+            Guide
+            {/* <span className="inline-block transform -translate-y-1 text-[#d12c2c]">
+              
+            </span> */}
             S
           </span>
         </h2>
@@ -64,7 +64,7 @@ const OurNinjas = () => {
        <Link href="/members" >  <button 
             className="group flex cursor-pointer items-center gap-2 bg-[#d12c2c] hover:bg-[#e03a3a] text-white px-8 py-2 rounded-lg font-bold  tracking-wider transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            Explore More
+            View Whole Team
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
               <ArrowRight size={24} />
             </span>
