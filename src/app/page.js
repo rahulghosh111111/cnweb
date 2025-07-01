@@ -18,7 +18,7 @@ export default function Home() {
       <OurEvents />
       {/* <ProjectsSection/> */}
       {/* <Alumini/> */}
-      <AnimatedTestimonialsDemo />
+      {/* <AnimatedTestimonialsDemo /> */}
       <JoinTeam/>
     </div>
   );
