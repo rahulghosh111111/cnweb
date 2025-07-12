@@ -45,6 +45,12 @@ const people = [
     designation: "Web Developer",
     image: "/WEB_Rahul_Ghosh.jpg",
   },
+  {
+    id: 8,
+    name: "Arpita Aparna Sahay",
+    designation: "Web Developer",
+    image: "/ML_Arpita_Aparna_Sahay.jpg",
+  },
 
 ];
 
