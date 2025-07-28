@@ -52,19 +52,21 @@ const MemberScroll = () => {
             alt={leader.name}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-4 right-4 bg-gradient-to-r  from-[#FF8820] to-[#fa5935] text-white px-1 sm:px-2 py-2 sm:py-1.5 rounded-full text-xs sm:text-sm font-normal shadow-2xl shadow-[#FF8820]/40 z-20 backdrop-blur-sm border border-white/30">
-            <Crown className="w-3 h-3 inline mr-1" />
-            {leader.position}
-          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent z-10" />
         </div>
 
         {/* Leader Info */}
         <div className="p-4 sm:p-6 relative z-10 bg-gradient-to-t from-[#0d0d0d]/98 to-transparent">
-          <h3 className="text-white mb-4 sm:mb-6 text-center text-xl sm:text-2xl font-bold drop-shadow-2xl">
+          <h3 className="text-white mb-2 sm:mb-3 text-center text-xl sm:text-2xl font-bold drop-shadow-2xl">
             {leader.name}
           </h3>
-          
+          {/* Position below name */}
+          <div className="flex justify-center mb-4 ">
+            <span className="inline-flex items-center bg-gradient-to-r from-[#FF8820] to-[#fa5935] text-white px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-normal shadow-2xl shadow-[#FF8820]/40 backdrop-blur-sm border border-white/30">
+              <Crown className="w-3 h-3 inline mr-1" />
+              {leader.position}
+            </span>
+          </div>
           {/* Social Icons */}
           <div className="flex justify-center space-x-3 sm:space-x-4">
             <a 
