@@ -1,16 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Menubars/Footer";
-import Navbar from "@/components/Menubars/Navbar";
+import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import NavFooterWrapper from "@/components/NavFooterWrapper/NavFooterWrapper"; // Adjust path if needed
 
-// Optimize font loading with display swap
+// Fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -79,10 +77,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -90,32 +85,28 @@ export default function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-
         <link
-    href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
-    rel="stylesheet"
-  />
-
+          href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className="antialiased flex flex-col min-h-screen">
-        <Navbar />
-        <main >
-          {children}
-        </main>
-        <Footer />
+        <NavFooterWrapper>
+          <main>{children}</main>
+        </NavFooterWrapper>
         <Script id="organization-schema" type="application/ld+json">
           {`{
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Coding Ninjas: KIIT Chapter",
-              "url": "https://www.cnkiit.in",
-              "logo": "https://www.cnkiit.in/logo.png",
-              "sameAs": [
-                "https://twitter.com/CodingNinjasKIIT",
-                "https://www.instagram.com/codingninjas_kiit/",
-                "https://github.com/CodingNinjasKIIT"
-              ]
-            }`}
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Coding Ninjas: KIIT Chapter",
+            "url": "https://www.cnkiit.in",
+            "logo": "https://www.cnkiit.in/logo.png",
+            "sameAs": [
+              "https://twitter.com/CodingNinjasKIIT",
+              "https://www.instagram.com/codingninjas_kiit/",
+              "https://github.com/CodingNinjasKIIT"
+            ]
+          }`}
         </Script>
       </body>
     </html>

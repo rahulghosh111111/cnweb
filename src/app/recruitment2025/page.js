@@ -56,9 +56,15 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-[url('/RecruitmentBg.png')] bg-cover bg-[position:center_1px] bg-no-repeat px-4 sm:px-6 "
-    
+    <div
+      className="relative min-h-screen flex items-center justify-center bg-[url('/RecruitmentBg.png')] bg-cover bg-[position:center_1px] bg-no-repeat px-4 sm:px-6"
     >
+      <img
+        src="/CodingNinjas.png"
+        alt="Logo"
+        className="absolute top-4 left-4 h-auto z-20 w-[190px]"
+      />
+
       {/* Optional overlay for readability */}
       <div className="absolute inset-0 bg-black/10 z-0" />
       <div className="relative z-10 flex flex-col items-center w-full md:max-w-sm max-w-md px-4 sm:px-6 pt-20 ">
@@ -77,12 +83,13 @@ const RegistrationForm = () => {
             </h2>
           </div>
           <form onSubmit={handleSubmit} className="space-y-2 overflow-y-auto max-h-[75vh] sm:max-h-full">
+
             {[
               { label: "Name", name: "Name", type: "text" },
               { label: "Roll Number", name: "RollNo", type: "text" },
               { label: "Phone Number", name: "Phone", type: "text" },
-              { label: "Year", name: "Year", type: "text" },
-              { label: "Domain", name: "Domain", type: "text" },
+              // Removed Year from here to add dropdown below
+              // Removed Domain from here to add dropdown below
               { label: "Email", name: "Email", type: "email" },
             ].map((field) => (
               <div key={field.name}>
@@ -99,6 +106,55 @@ const RegistrationForm = () => {
                 />
               </div>
             ))}
+
+            {/* Year dropdown */}
+            <div>
+              <label className="text-sm block font-bold text-gray-700 mt-1 mb-1">
+                Year
+              </label>
+              <select
+                name="Year"
+                value={formData.Year}
+                onChange={handleChange}
+                className="w-full text-black border-b border-gray-400 focus:border-[#ee6220] outline-none px-2 py-1 transition"
+                required
+              >
+                <option value="" disabled>
+                  Select your year
+                </option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+              </select>
+            </div>
+
+            {/* Domain dropdown */}
+            <div>
+              <label className="text-sm block font-bold text-gray-700 mt-1 mb-1">
+                Domain
+              </label>
+              <select
+                name="Domain"
+                value={formData.Domain}
+                onChange={handleChange}
+                className="w-full text-black border-b border-gray-400 focus:border-[#ee6220] outline-none px-2 py-1 transition"
+                required
+              >
+                <option value="" disabled>
+                  Select your domain
+                </option>
+                <option value="Admin">Admin</option>
+                <option value="Design & Branding">Design & Branding</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="App Development">App Development</option>
+                <option value="Social">Social</option>
+                <option value="Competitive Programming">Competitive Programming</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Machine Learning">Machine Learning</option>
+              </select>
+            </div>
+
             <div>
               <label className="text-sm block font-bold text-gray-700 mt-1 mb-1">
                 GitHub URL
