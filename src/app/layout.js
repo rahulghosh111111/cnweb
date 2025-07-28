@@ -90,6 +90,12 @@ export default function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+
+        <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+    rel="stylesheet"
+  />
+
       </head>
       <body className="antialiased flex flex-col min-h-screen">
         <Navbar />
