@@ -69,7 +69,7 @@ const RegistrationForm = () => {
           className="w-[190px] h-auto object-contain drop-shadow-lg mb-[-40px]"
         />
         {/* Card */}
-        <div className=" bg-white/50 backdrop-blur-md rounded-2xl shadow-xl pt-10 pb-8 px-6 w-full">
+        <div className=" bg-white/70 backdrop-blur-md rounded-2xl shadow-xl pt-10 pb-8 px-6 w-full">
           <Toaster />
           <div className="text-center mb-6">
             <h2 className="text-orange-600 font-extrabold text-[18px] tracking-wide uppercase bungee-font">
