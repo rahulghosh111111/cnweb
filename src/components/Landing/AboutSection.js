@@ -76,7 +76,7 @@ const AboutSection = () => {
                       fontFamily: "'Gang of Three', Arial, sans-serif",
                     }}
                   >
-                    10+
+                    15+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Projects</p>
                 </div>
@@ -88,7 +88,7 @@ const AboutSection = () => {
                       fontFamily: "'Gang of Three', Arial, sans-serif",
                     }}
                   >
-                    10+
+                    5+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Events</p>
                 </div>
@@ -100,7 +100,7 @@ const AboutSection = () => {
                       fontFamily: "'Gang of Three', Arial, sans-serif",
                     }}
                   >
-                    10+
+                    250+
                   </h3>
                   <p className="lg:text-xl mt-1 font-medium">Members</p>
                 </div>
