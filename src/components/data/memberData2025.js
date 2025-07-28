@@ -439,7 +439,7 @@ export const domains = {
     icon: Smartphone,
     color: "from-[#FF8820] to-[#8d0e0e]",
     lead: {
-      name: "Ary Bhatia",
+      name: "Keshav",
       role: "LEAD",
       image: "/demo.png",
       social: {
