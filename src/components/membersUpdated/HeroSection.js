@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="h-screen flex relative">
+    <section className="h-screen bg-black flex relative">
       <div className="w-full mx-auto rounded-xl overflow-hidden relative">
         <Image
           src="/memberHero.jpg"
@@ -23,7 +23,7 @@ export default function HeroSection() {
           >
             Our Ninjas
           </h1>
-          <h2 className="text-lg font-normal pb-4 sm:px-10 px-5 text-[rgba(255,255,255,0.43)]">
+          <h2 className="text-lg font-normal pb-4 sm:px-10 px-5 text-[rgba(255,255,255,0.93)]">
             Meet the most talented, creative, and fun-loving team. We are a
             group of creative minds who are passionate about what they do.{" "}
           </h2>
