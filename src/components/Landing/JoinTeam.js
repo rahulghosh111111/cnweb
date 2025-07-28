@@ -1,4 +1,6 @@
+
 import React from 'react';
+import Link from 'next/link';
 
 const JoinEvent = () => {
   return (
@@ -42,21 +44,21 @@ const JoinEvent = () => {
       </div>
 
       <div className="relative z-10 flex justify-center">
-        <button className="group relative px-8 py-2 sm:px-6 lg:px-10 mt-2 lg:py-3 bg-white hover:bg-[#d4d1d1] text-black rounded-full text-lg sm:text-xl font-semibold transition-all duration-300 hover:scale-105 border border-gray-800 hover:border-[#fa5935] shadow-lg hover:shadow-[#fa5935]/20">
-          <span className="relative z-10">
-            JOIN NOW
-          </span>
-
-          {/* Subtle arrow icon */}
-          <svg 
-            className="inline-block ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </button>
+        <Link href="/recruitment2025" passHref legacyBehavior>
+          <button className="group relative px-8 py-2 sm:px-6 lg:px-10 mt-2 lg:py-3 bg-white hover:bg-[#d4d1d1] text-black rounded-full text-lg sm:text-xl font-semibold transition-all duration-300 hover:scale-105 border border-gray-800 hover:border-[#fa5935] shadow-lg hover:shadow-[#fa5935]/20">
+            <span className="relative z-10">
+              JOIN NOW
+            </span>
+            <svg 
+              className="inline-block ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );
