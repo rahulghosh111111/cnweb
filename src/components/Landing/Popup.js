@@ -36,7 +36,7 @@ const Popup = ({ onClose }) => (
         href="/recruitment2025"
         className="inline-block px-12 py-4 bg-gradient-to-r from-orange-500 to-orange-700 text-white font-bold text-xl rounded-full shadow-xl hover:scale-105 hover:from-orange-600 hover:to-orange-800 transition-all duration-200 focus:ring-4 focus:ring-orange-400 focus:outline-none cursor-pointer"
       >
-        Register Now / अभी रजिस्टर करें
+        Register Now
       </Link>
     </div>
     <style jsx global>{`
